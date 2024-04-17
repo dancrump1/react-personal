@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ craft.app.language }}">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      {{ siteName }}
+    </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="preload stylesheet"
+      href="{{ craft.vite.asset('src/scss/main.scss') }}"
+      as="style" />
+
+    {# Use to add favicon #}
+    {# <link rel="shortcut icon"
+    type="image/png"
+    href="{{ siteUrl }}local/img/replace-with-file-name"
+    sizes="16x16" /> #}
+  </head>
+  <body class="ltr" data-barba="wrapper">
+    {% block content %}
+
+    {% endblock %}
+
+    <div id="root"></div>
+    {{ craft.vite.script('src/react/index.tsx') }}
+  </body>
+</html>
