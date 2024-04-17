@@ -80,8 +80,8 @@ function App() {
       </div>
       <div className="h-screen w-full rounded-md flex md:items-center md:justify-center dark:bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
         <Spotlight
-          className="-top-40 left-0 h-screen md:left-60 md:-top-20"
-          fill="white"
+          className="-top-40 left-[-70px] h-screen md:left-60 md:-top-40"
+          fill={ window.document.documentElement.classList.contains("light") ? "white" : 'green' }
         />
         <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
           <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-neutral-700 dark:text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 ">
@@ -133,10 +133,10 @@ function App() {
         </div>
       </div>
 
-      <h2 className="lg:h-[85px] md:h-[75px] relative z-10 text-lg md:text-7xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
+      <h2 className="lg:h-[85px] md:h-[75px] h-[55px] mt-20 relative z-10 text-5xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-500 to-neutral-600  text-center font-sans font-bold">
         Projects
       </h2>
-      <div className="flex flex-wrap h-5/6 justify-center px-12 gap-12 dark:bg-black/[0.96] antialiased bg-grid-white/[0.02]">
+      <div className="flex flex-wrap h-5/6 justify-center px-12 gap-2 md:gap-12 dark:bg-black/[0.96] antialiased bg-grid-white/[0.02]">
         <CardContainer className="inter-var">
           <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
             <CardItem translateX={15} translateY={-10}>
@@ -171,7 +171,7 @@ function App() {
         </CardContainer>
       </div>
 
-      <div className="h-[40rem] w-full dark:bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
+      <div className="md:mt-24 w-full dark:bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
         <h1 className="md:text-5xl text-3xl lg:text-7xl font-bold text-center text-neutral-800 relative z-20 dark:text-white">
           UI/UX coming soon... <br /> sorry for the barebones site!
         </h1>
