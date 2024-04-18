@@ -557,7 +557,7 @@ function App() {
           img="/local/gelinas.png"
         />
         <ProjectCard
-          header={"WIP OSG Paintball"}
+          header={"WIP OSG Paintball map"}
           description={`A conversation turned into reality, hope to be able to refine this and actually get it onto OSG's website!`}
           url={"https://test-hover-map.multiscreensite.com/"}
           cta={"Would this be cool on their site?"}
