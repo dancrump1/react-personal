@@ -148,13 +148,15 @@ function App() {
           }
           url={"http://old-techdiff.k9rria1zz3-rz83yxpn04d7.p.temp-site.link/"}
           cta={"old tech diff site"}
+          img="/local/old_techdiff.png"
         />
         <ProjectCard
           header={"Gelinas Siding LLC"}
           description={`Given a deadline of 26 days, giving piece of mind to a business owner was my main priority`}
           url={"http://gelinas-siding.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
           cta={"gelinassidding.com"}
-        />
+          img="/local/gelinas.png"
+          />
         <ProjectCard
           header={"Room To Improve Interiors"}
           description={
@@ -162,18 +164,21 @@ function App() {
           }
           url={"https://www.roomtoimproveinteriors.com"}
           cta={"Room to Improve"}
-        />
+          img="/local/rtii.png"
+          />
         <ProjectCard
           header={"A tool for a friend"}
           description={"He uses Twitch far too much"}
           url={"http://twitch-clips.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
           cta={"What happend to Heroku?"}
-        />
+          img="/local/twitch.png"
+          />
         <ProjectCard
           header={"An old personal site"}
           description={"Back in my coding bootcamp days..."}
           url={"http://dan.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
           cta={"An oldie but a goodie!"}
+          img="/local/old.png"
         />
       </div>
 
@@ -278,7 +283,7 @@ const HoverCTA = ({ url, text }) => {
   );
 };
 
-const ProjectCard = ({ header, description, url, cta }) => {
+const ProjectCard = ({ header, description, url, cta, img }) => {
   return (
     <CardContainer className="inter-var">
       <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
@@ -286,6 +291,15 @@ const ProjectCard = ({ header, description, url, cta }) => {
           <h3 className="text-xl font-bold text-neutral-600 dark:text-white">
             {header}
           </h3>
+        </CardItem>
+        <CardItem translateZ="100" className="w-full mt-4">
+          <img
+            src={img}
+            height="1000"
+            width="1000"
+            className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+            alt="thumbnail"
+          />
         </CardItem>
         <CardItem translateZ={70}>
           <p className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300">
