@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useMotionTemplate, useMotionValue, motion } from "framer-motion";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
@@ -27,7 +27,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "../components/ui/alert-dialog";
-import { ThemeProvider } from "../components/ui/theme-provider";
+import { ThemeProvider, useTheme } from "../components/ui/theme-provider";
 import { ModeToggle } from "../components/ui/mode-toggle";
 
 // ACETERNITY
@@ -58,7 +58,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.querySelector("#root")!).render(
   <React.StrictMode>
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+    <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
       <RouterProvider router={router} />
     </ThemeProvider>
   </React.StrictMode>
@@ -72,7 +72,10 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {}
  * How to implement a React frontend with GraphQL. Currently not using Server Components. Yet...
  * @returns html that renders as the app
  */
+
 function App() {
+  const theme = useTheme();
+
   return (
     <>
       <div className="fixed top-0 right-0 z-50">
@@ -81,11 +84,7 @@ function App() {
       <div className="h-screen w-full rounded-md flex md:items-center md:justify-center dark:bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
         <Spotlight
           className="-top-40 left-[-70px] h-screen md:left-60 md:-top-40"
-          fill={
-            window.document.documentElement.classList.contains("light")
-              ? "white"
-              : "green"
-          }
+          fill={theme.theme === "light" ? "grey" : "white"}
         />
         <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
           <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-neutral-700 dark:text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 ">
