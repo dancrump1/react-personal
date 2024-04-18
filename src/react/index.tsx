@@ -141,97 +141,40 @@ function App() {
         Projects
       </h2>
       <div className="flex flex-wrap h-5/6 justify-center px-12 gap-2 md:gap-12 dark:bg-black/[0.96] antialiased bg-grid-white/[0.02]">
-        <CardContainer className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
-            <CardItem translateX={15} translateY={-10}>
-              <h3>techdiff.io v1</h3>
-            </CardItem>
-            <CardItem translateZ={70}>
-              <p>
-                I had started this project in Twig/PHP, but wanted to jump to
-                client rendered code
-              </p>
-            </CardItem>
-            <CardItem translateZ={15}>
-              <HoverCTA
-                url={
-                  "http://old-techdiff.k9rria1zz3-rz83yxpn04d7.p.temp-site.link/"
-                }
-                text="old tech diff site"
-              />
-            </CardItem>
-          </CardBody>
-        </CardContainer>
-        <CardContainer>
-          <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
-            <CardItem translateX={15} translateY={-10}>
-              <h3>Gelinas Siding LLC</h3>
-            </CardItem>
-            <CardItem translateZ={70}>
-              <p>
-                Given a deadline of 26 days, giving piece of mind to a business
-                owner was my main priority
-              </p>
-            </CardItem>
-            <CardItem translateZ={15}>
-              <HoverCTA
-                url={"http://gelinas-siding.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
-                text="gelinassidding.com"
-              />
-            </CardItem>
-          </CardBody>
-        </CardContainer>
-        <CardContainer>
-          <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
-            <CardItem translateX={15} translateY={-10}>
-              <h3>Room To Improve Interiors</h3>
-            </CardItem>
-            <CardItem translateZ={70}>
-              <p>
-                Working with my FMIL, we <i>started</i> making her dream jobs
-                landing page.
-              </p>
-            </CardItem>
-            <CardItem translateZ={15}>
-              <HoverCTA
-                url={"https://www.roomtoimproveinteriors.com"}
-                text="Room to Improve"
-              />
-            </CardItem>
-          </CardBody>
-        </CardContainer>
-        <CardContainer>
-          <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
-            <CardItem translateX={15} translateY={-10}>
-              <h3>A tool for a friend</h3>
-            </CardItem>
-            <CardItem translateZ={70}>
-              <p>He uses Twitch far too much</p>
-            </CardItem>
-            <CardItem translateZ={15}>
-              <HoverCTA
-                url={"http://twitch-clips.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
-                text="What happend to Heroku?"
-              />
-            </CardItem>
-          </CardBody>
-        </CardContainer>
-        <CardContainer>
-          <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
-            <CardItem translateX={15} translateY={-10}>
-              <h3>An old personal site</h3>
-            </CardItem>
-            <CardItem translateZ={70}>
-              <p>Back in my coding bootcamp days...</p>
-            </CardItem>
-            <CardItem translateZ={15}>
-              <HoverCTA
-                url={"http://dan.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
-                text="An oldie but a goodie!"
-              />
-            </CardItem>
-          </CardBody>
-        </CardContainer>
+        <ProjectCard
+          header={"techdiff.io V1"}
+          description={
+            "I had started this project in Twig/PHP, but wanted to jump to client rendered code"
+          }
+          url={"http://old-techdiff.k9rria1zz3-rz83yxpn04d7.p.temp-site.link/"}
+          cta={"old tech diff site"}
+        />
+        <ProjectCard
+          header={"Gelinas Siding LLC"}
+          description={`Given a deadline of 26 days, giving piece of mind to a business owner was my main priority`}
+          url={"http://gelinas-siding.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
+          cta={"gelinassidding.com"}
+        />
+        <ProjectCard
+          header={"Room To Improve Interiors"}
+          description={
+            " Working with my FMIL, we <i>started</i> making her dream jobs landing page."
+          }
+          url={"https://www.roomtoimproveinteriors.com"}
+          cta={"Room to Improve"}
+        />
+        <ProjectCard
+          header={"A tool for a friend"}
+          description={"He uses Twitch far too much"}
+          url={"http://twitch-clips.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
+          cta={"What happend to Heroku?"}
+        />
+        <ProjectCard
+          header={"An old personal site"}
+          description={"Back in my coding bootcamp days..."}
+          url={"http://dan.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
+          cta={"An oldie but a goodie!"}
+        />
       </div>
 
       <div className="md:mt-24 w-full dark:bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
@@ -315,7 +258,7 @@ const HoverCTA = ({ url, text }) => {
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setVisible(true)}
       onMouseLeave={() => setVisible(false)}
-      className="p-[2px] rounded-lg transition duration-300 group/input w-max mx-auto"
+      className="p-[2px] rounded-lg transition duration-300 group/input w-max mx-auto mt-6"
     >
       <a
         href={url}
@@ -332,5 +275,27 @@ const HoverCTA = ({ url, text }) => {
         {text}
       </a>
     </motion.div>
+  );
+};
+
+const ProjectCard = ({ header, description, url, cta }) => {
+  return (
+    <CardContainer className="inter-var">
+      <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+        <CardItem translateZ={15}>
+          <h3 className="text-xl font-bold text-neutral-600 dark:text-white">
+            {header}
+          </h3>
+        </CardItem>
+        <CardItem translateZ={70}>
+          <p className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300">
+            {description}
+          </p>
+        </CardItem>
+        <CardItem translateZ={15}>
+          <HoverCTA url={url} text={cta} />
+        </CardItem>
+      </CardBody>
+    </CardContainer>
   );
 };
