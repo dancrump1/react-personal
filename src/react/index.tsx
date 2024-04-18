@@ -134,8 +134,11 @@ function App() {
         </div>
       </div>
 
-      <h2 className="h-[55px] mt-20 relative z-10 text-5xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-500 to-neutral-600 text-center font-sans font-bold lg:h-[85px] md:h-[75px]">
-        Projects
+      <h2 className="h-[55px] mt-20 relative z-10 text-5xl bg-clip-text md:text-7xl text-transparent bg-gradient-to-b from-neutral-500 to-neutral-600 text-center font-sans font-bold lg:h-[85px] md:h-[75px]">
+        Some of my{" "}
+        <span className="bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
+          Projects
+        </span>
       </h2>
       <div className="flex flex-wrap h-5/6 justify-center px-12 gap-x-2 md:gap-x-12 dark:bg-black/[0.96] antialiased bg-grid-white/[0.02]">
         <ProjectCard
