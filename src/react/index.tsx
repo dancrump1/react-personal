@@ -81,7 +81,11 @@ function App() {
       <div className="h-screen w-full rounded-md flex md:items-center md:justify-center dark:bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
         <Spotlight
           className="-top-40 left-[-70px] h-screen md:left-60 md:-top-40"
-          fill={ window.document.documentElement.classList.contains("light") ? "white" : 'green' }
+          fill={
+            window.document.documentElement.classList.contains("light")
+              ? "white"
+              : "green"
+          }
         />
         <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
           <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-neutral-700 dark:text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 ">
@@ -133,7 +137,7 @@ function App() {
         </div>
       </div>
 
-      <h2 className="lg:h-[85px] md:h-[75px] h-[55px] mt-20 relative z-10 text-5xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-500 to-neutral-600  text-center font-sans font-bold">
+      <h2 className="h-[55px] mt-20 relative z-10 text-5xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-500 to-neutral-600 text-center font-sans font-bold lg:h-[85px] md:h-[75px]">
         Projects
       </h2>
       <div className="flex flex-wrap h-5/6 justify-center px-12 gap-2 md:gap-12 dark:bg-black/[0.96] antialiased bg-grid-white/[0.02]">
@@ -149,7 +153,12 @@ function App() {
               </p>
             </CardItem>
             <CardItem translateZ={15}>
-              <HoverCTA url={"google.com"} text="old tech diff site" />
+              <HoverCTA
+                url={
+                  "http://old-techdiff.k9rria1zz3-rz83yxpn04d7.p.temp-site.link/"
+                }
+                text="old tech diff site"
+              />
             </CardItem>
           </CardBody>
         </CardContainer>
@@ -165,7 +174,10 @@ function App() {
               </p>
             </CardItem>
             <CardItem translateZ={15}>
-              <HoverCTA url={"google.com"} text="gelinassidding.com" />
+              <HoverCTA
+                url={"	gelinas-siding.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
+                text="gelinassidding.com"
+              />
             </CardItem>
           </CardBody>
         </CardContainer>
@@ -256,6 +268,8 @@ const HoverCTA = ({ url, text }) => {
     >
       <a
         href={url}
+        target="_blank"
+        rel="noopener noreferrer"
         className="flex h-10 w-full border-none bg-gray-50 dark:bg-zinc-800 text-black dark:text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent 
           file:text-sm file:font-medium placeholder:text-neutral-400 dark:placeholder-text-neutral-600 
           focus-visible:outline-none focus-visible:ring-[2px]  focus-visible:ring-neutral-400 dark:focus-visible:ring-neutral-600
