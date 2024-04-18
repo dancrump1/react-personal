@@ -137,7 +137,7 @@ function App() {
       <h2 className="h-[55px] mt-20 relative z-10 text-5xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-500 to-neutral-600 text-center font-sans font-bold lg:h-[85px] md:h-[75px]">
         Projects
       </h2>
-      <div className="flex flex-wrap h-5/6 justify-center px-12 gap-2 md:gap-12 dark:bg-black/[0.96] antialiased bg-grid-white/[0.02]">
+      <div className="flex flex-wrap h-5/6 justify-center px-12 gap-x-2 md:gap-x-12 dark:bg-black/[0.96] antialiased bg-grid-white/[0.02]">
         <ProjectCard
           header={"techdiff.io V1"}
           description={
@@ -266,7 +266,7 @@ const HoverCTA = ({ url, text }) => {
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex h-10 w-full border-none bg-gray-50 dark:bg-zinc-800 text-black dark:text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent 
+        className="flex h-10 w-full border bg-gray-50 dark:bg-zinc-800 text-black dark:text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent 
           file:text-sm file:font-medium placeholder:text-neutral-400 dark:placeholder-text-neutral-600 
           focus-visible:outline-none focus-visible:ring-[2px]  focus-visible:ring-neutral-400 dark:focus-visible:ring-neutral-600
            disabled:cursor-not-allowed disabled:opacity-50
