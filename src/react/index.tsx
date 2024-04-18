@@ -175,8 +175,59 @@ function App() {
             </CardItem>
             <CardItem translateZ={15}>
               <HoverCTA
-                url={"	gelinas-siding.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
+                url={"gelinas-siding.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
                 text="gelinassidding.com"
+              />
+            </CardItem>
+          </CardBody>
+        </CardContainer>
+        <CardContainer>
+          <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+            <CardItem translateX={15} translateY={-10}>
+              <h3>Room To Improve Interiors</h3>
+            </CardItem>
+            <CardItem translateZ={70}>
+              <p>
+                Working with my FMIL, we <i>started</i> making her dream jobs
+                landing page.
+              </p>
+            </CardItem>
+            <CardItem translateZ={15}>
+              <HoverCTA
+                url={"roomtoimproveinteriors.com"}
+                text="Room to Improve"
+              />
+            </CardItem>
+          </CardBody>
+        </CardContainer>
+        <CardContainer>
+          <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+            <CardItem translateX={15} translateY={-10}>
+              <h3>A tool for a friend</h3>
+            </CardItem>
+            <CardItem translateZ={70}>
+              <p>He uses Twitch far too much</p>
+            </CardItem>
+            <CardItem translateZ={15}>
+              <HoverCTA
+                url={"twitch-clips.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
+                text="What happend to Heroku?"
+              />
+            </CardItem>
+          </CardBody>
+        </CardContainer>
+        <CardContainer>
+          <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+            <CardItem translateX={15} translateY={-10}>
+              <h3>An old personal site</h3>
+            </CardItem>
+            <CardItem translateZ={70}>
+              <p>Back in my coding bootcamp days...</p>
+            </CardItem>
+            <CardItem translateZ={15}>
+              <HoverCTA
+                url={"dan.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
+                text="An oldie but a goodie!"
               />
             </CardItem>
           </CardBody>
