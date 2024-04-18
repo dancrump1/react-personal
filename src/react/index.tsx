@@ -558,7 +558,7 @@ function App() {
         <ProjectCard
           header={"Room To Improve Interiors"}
           description={
-            " Working with my FMIL, we <i>started</i> making her dream jobs landing page."
+            "Working with my FMIL, we started making her dream jobs landing page."
           }
           url={"https://www.roomtoimproveinteriors.com"}
           cta={"Room to Improve"}
