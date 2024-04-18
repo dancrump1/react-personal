@@ -516,7 +516,7 @@ function App() {
               ]}
             />
           </h1>
-          <p className="mt-4 text-2xl text-neutral-500 max-w-lg text-center mx-auto dark:text-neutral-300">
+          <p className="text-2xl text-neutral-500 text-center mx-auto dark:text-neutral-300">
             Figuring out each facet of life one trial-and-error at a time!
           </p>
         </div>
@@ -528,6 +528,9 @@ function App() {
           Projects
         </span>
       </h2>
+        <p className="text-center text-base md:text-lg font-normal mb-6 text-neutral-700 dark:text-neutral-200 mx-auto py-2">
+          Psttt.... notice anything missing? Hint: it's styling... styling is missing
+        </p>
       <div className="flex flex-wrap h-5/6 justify-center px-12 gap-x-2 md:gap-x-12 dark:bg-black/[0.96] antialiased bg-grid-white/[0.02]">
         <ProjectCard
           header={"techdiff.io V1"}
