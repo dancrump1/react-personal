@@ -535,9 +535,10 @@ function App() {
           Projects
         </span>
       </h2>
-        <p className="text-center text-base md:text-lg font-normal mb-6 text-neutral-700 dark:text-neutral-200 mx-auto py-2">
-          Psttt.... notice anything missing? Hint: it's styling... styling is missing
-        </p>
+      <p className="text-center text-base md:text-lg font-normal mb-6 text-neutral-700 dark:text-neutral-200 mx-auto py-2">
+        Psttt.... notice anything missing? Hint: it's styling... styling is
+        missing
+      </p>
       <div className="flex flex-wrap h-5/6 justify-center px-12 gap-x-2 md:gap-x-12 dark:bg-black/[0.96] antialiased bg-grid-white/[0.02]">
         <ProjectCard
           header={"techdiff.io V1"}
@@ -554,6 +555,13 @@ function App() {
           url={"http://gelinas-siding.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
           cta={"gelinassidding.com"}
           img="/local/gelinas.png"
+        />
+        <ProjectCard
+          header={"WIP OSG Paintball"}
+          description={`A conversation turned into reality, hope to be able to refine this and actually get it onto OSG's website!`}
+          url={"https://test-hover-map.multiscreensite.com/"}
+          cta={"Would this be cool on their site?"}
+          img="/local/osg.png"
         />
         <ProjectCard
           header={"Room To Improve Interiors"}
