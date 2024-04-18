@@ -155,7 +155,7 @@ function App() {
             <CardItem translateZ={15}>
               <HoverCTA
                 url={
-                  "http://www.old-techdiff.k9rria1zz3-rz83yxpn04d7.p.temp-site.link/"
+                  "http://old-techdiff.k9rria1zz3-rz83yxpn04d7.p.temp-site.link/"
                 }
                 text="old tech diff site"
               />
@@ -175,7 +175,7 @@ function App() {
             </CardItem>
             <CardItem translateZ={15}>
               <HoverCTA
-                url={"http://www.gelinas-siding.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
+                url={"http://gelinas-siding.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
                 text="gelinassidding.com"
               />
             </CardItem>
@@ -210,7 +210,7 @@ function App() {
             </CardItem>
             <CardItem translateZ={15}>
               <HoverCTA
-                url={"https://www.twitch-clips.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
+                url={"http://twitch-clips.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
                 text="What happend to Heroku?"
               />
             </CardItem>
@@ -226,7 +226,7 @@ function App() {
             </CardItem>
             <CardItem translateZ={15}>
               <HoverCTA
-                url={"dan.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
+                url={"http://dan.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
                 text="An oldie but a goodie!"
               />
             </CardItem>
