@@ -68,7 +68,14 @@ const globeConfig = {
   autoRotate: true,
   autoRotateSpeed: 2,
 };
-const colors = ["#B003FF", "#5FBAAF", "#FF4900"];
+const colors = [
+  "#00AF2C",
+  "#00AAFF",
+  "#FF0062",
+  "#FFA400",
+  "#FF00D5",
+  "#0000FF",
+];
 const sampleArcs = [
   {
     order: 1,
@@ -77,7 +84,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.1,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 1,
@@ -86,7 +93,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.2,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 1,
@@ -95,7 +102,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.5,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 2,
@@ -104,7 +111,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.2,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 2,
@@ -113,7 +120,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.3,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 2,
@@ -122,7 +129,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.3,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 3,
@@ -131,7 +138,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.3,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 3,
@@ -140,7 +147,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.3,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 3,
@@ -149,7 +156,7 @@ const sampleArcs = [
     endLat: 51.5072,
     endLng: -71.1203,
     arcAlt: 0.3,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 4,
@@ -158,7 +165,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.5,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 4,
@@ -167,7 +174,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.7,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 4,
@@ -176,7 +183,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.1,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 5,
@@ -185,7 +192,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.3,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 5,
@@ -194,7 +201,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.2,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 5,
@@ -203,7 +210,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.2,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 6,
@@ -212,7 +219,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.7,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 6,
@@ -221,7 +228,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.1,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 6,
@@ -230,7 +237,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.3,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 7,
@@ -239,7 +246,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.1,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 7,
@@ -248,7 +255,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.1,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 7,
@@ -257,7 +264,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.2,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 8,
@@ -266,7 +273,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: 18.436529,
     arcAlt: 0.2,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 8,
@@ -275,7 +282,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.2,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 8,
@@ -284,7 +291,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.5,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 9,
@@ -293,7 +300,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.2,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 9,
@@ -302,7 +309,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.7,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 9,
@@ -311,7 +318,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.5,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 10,
@@ -320,7 +327,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.7,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 10,
@@ -329,7 +336,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.3,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 10,
@@ -338,7 +345,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.3,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 11,
@@ -347,7 +354,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.2,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 11,
@@ -356,7 +363,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.2,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 11,
@@ -365,7 +372,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.2,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 12,
@@ -374,7 +381,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.1,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 12,
@@ -383,7 +390,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.2,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 12,
@@ -392,7 +399,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.3,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 13,
@@ -401,7 +408,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.3,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 13,
@@ -410,7 +417,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.3,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 13,
@@ -419,7 +426,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.1,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
   {
     order: 14,
@@ -428,7 +435,7 @@ const sampleArcs = [
     endLat: 43.9792,
     endLng: -71.1203,
     arcAlt: 0.3,
-    color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    color: colors[Math.floor(Math.random() * colors.length)],
   },
 ];
 
