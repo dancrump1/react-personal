@@ -96,8 +96,7 @@ function App() {
                   id: 0,
                   content: (
                     <p>
-                      So that's how
-                      <Highlight> the web</Highlight> works
+                      So that's how <Highlight>the web</Highlight> works
                     </p>
                   ),
                 },
@@ -105,8 +104,7 @@ function App() {
                   id: 1,
                   content: (
                     <p>
-                      So that's how
-                      <Highlight> owning a home</Highlight> works
+                      So that's how <Highlight>owning a home</Highlight> works
                     </p>
                   ),
                 },
@@ -114,8 +112,8 @@ function App() {
                   id: 2,
                   content: (
                     <p>
-                      So that's how
-                      <Highlight> raising a family</Highlight> works
+                      So that's how <Highlight>raising a family</Highlight>
+                      works
                     </p>
                   ),
                 },
@@ -123,8 +121,7 @@ function App() {
                   id: 3,
                   content: (
                     <p>
-                      So that's how
-                      <Highlight> fixing an s10</Highlight> works
+                      So that's how <Highlight>fixing an s10</Highlight> works
                     </p>
                   ),
                 },
@@ -156,7 +153,7 @@ function App() {
           url={"http://gelinas-siding.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
           cta={"gelinassidding.com"}
           img="/local/gelinas.png"
-          />
+        />
         <ProjectCard
           header={"Room To Improve Interiors"}
           description={
@@ -165,14 +162,14 @@ function App() {
           url={"https://www.roomtoimproveinteriors.com"}
           cta={"Room to Improve"}
           img="/local/rtii.png"
-          />
+        />
         <ProjectCard
           header={"A tool for a friend"}
           description={"He uses Twitch far too much"}
           url={"http://twitch-clips.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
           cta={"What happend to Heroku?"}
           img="/local/twitch.png"
-          />
+        />
         <ProjectCard
           header={"An old personal site"}
           description={"Back in my coding bootcamp days..."}
