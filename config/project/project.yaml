@@ -1,4 +1,4 @@
-dateModified: 1713452561
+dateModified: 1713452982
 email:
   fromEmail: daniel@drivebrandstudio.com
   fromName: 'Craft4 Scaffolding Ddev'
@@ -8,9 +8,9 @@ fs:
     hasUrls: true
     name: Assets
     settings:
-      path: /assets
+      path: assets/photos
     type: craft\fs\Local
-    url: '@web/assets'
+    url: '@web/assets/photos'
 meta:
   __names__:
     bf2250f5-6e7f-4211-9f41-fb415d66f9a8: 'Private Schema' # Private Schema
