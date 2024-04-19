@@ -454,7 +454,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.querySelector("#root")!).render(
   <React.StrictMode>
-    <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
+    <ThemeProvider storageKey="vite-ui-theme">
       <RouterProvider router={router} />
     </ThemeProvider>
   </React.StrictMode>
