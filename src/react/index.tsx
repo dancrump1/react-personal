@@ -546,15 +546,15 @@ function App() {
           cta={"gelinassidding.com"}
           img="/local/gelinas.png"
         />
-          <ProjectCard
-            header={"Shop Country Stores"}
-            description={
-              "A good moral project that I thought would be an amazing starting point for my portfolio"
-            }
-            url={"https://dancrump2.wixsite.com/shop-country-stores"}
-            cta={"Shop Country Stores"}
-            img="/local/scs.png"
-          />
+        <ProjectCard
+          header={"Shop Country Stores"}
+          description={
+            "A good moral project that I thought would be an amazing starting point for my portfolio"
+          }
+          url={"https://dancrump2.wixsite.com/shop-country-stores"}
+          cta={"Shop Country Stores"}
+          img="/local/scs.png"
+        />
         <ProjectCard
           header={"WIP OSG Paintball map"}
           description={`A conversation turned into reality, hope to be able to refine this and actually get it onto OSG's website!`}
@@ -610,22 +610,152 @@ function App() {
           career.
         </p>
 
-        <img
-          src={
-            fun === "business"
-              ? "/local/profile.jpg"
-              : "/local/bw_paintball.jpg"
-          }
-          className="mx-auto object-cover rounded-full md:max-h-[50vh]"
-          alt="Picture of Dan"
-        />
+        <div className="flex max-w-[80vw] mx-auto justify-center gap-6">
+          <img
+            src={
+              fun === "business"
+                ? "/local/profile.jpg"
+                : "/local/bw_paintball.jpg"
+            }
+            className="object-cover rounded-full max-h-[25vh]"
+            alt="Picture of Dan"
+          />
+          {/* <!-- Timeline --> */}
+          <div>
+            {/* <!-- Heading --> */}
+            <div className="ps-2 my-2 first:mt-0">
+              <h3 className="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400">
+                Aug, 2016
+              </h3>
+            </div>
+            {/* <!-- End Heading --> */}
+
+            {/* <!-- Item --> */}
+            <div className="flex gap-x-3">
+              {/* <!-- Icon --> */}
+              <div className="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
+                <div className="relative z-10 size-7 flex justify-center items-center">
+                  <div className="size-2 rounded-full bg-gray-400 dark:bg-neutral-600"></div>
+                </div>
+              </div>
+              {/* <!-- End Icon --> */}
+
+              {/* <!-- Right Content --> */}
+              <div className="grow pt-0.5 pb-8">
+                <h3 className="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white">
+                  <svg
+                    className="flex-shrink-0 size-4 mt-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" x2="8" y1="13" y2="13"></line>
+                    <line x1="16" x2="8" y1="17" y2="17"></line>
+                    <line x1="10" x2="8" y1="9" y2="9"></line>
+                  </svg>
+                  College in Colorado
+                </h3>
+                <p className="mt-1 text-sm text-gray-600 dark:text-neutral-400">
+                  I enjoy trying to understand peoples personalities and how
+                  they tick
+                </p>
+              </div>
+              {/* <!-- End Right Content --> */}
+            </div>
+            {/* <!-- End Item --> */}
+
+            {/* <!-- Item --> */}
+            <div className="flex gap-x-3">
+              {/* <!-- Icon --> */}
+              <div className="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
+                <div className="relative z-10 size-7 flex justify-center items-center">
+                  <div className="size-2 rounded-full bg-gray-400 dark:bg-neutral-600"></div>
+                </div>
+              </div>
+              {/* <!-- End Icon --> */}
+
+              {/* <!-- Right Content --> */}
+              <div className="grow pt-0.5 pb-8">
+                <h3 className="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white">
+                  Move back to NH
+                </h3>
+                <p className="mt-1 text-sm text-gray-600 dark:text-neutral-400">
+                  I enjoy trying to understand computers and what makes them
+                  tick
+                </p>
+              </div>
+              {/* <!-- End Right Content --> */}
+            </div>
+            {/* <!-- End Item --> */}
+
+            {/* <!-- Item --> */}
+            <div className="flex gap-x-3">
+              {/* <!-- Icon --> */}
+              <div className="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
+                <div className="relative z-10 size-7 flex justify-center items-center">
+                  <div className="size-2 rounded-full bg-gray-400 dark:bg-neutral-600"></div>
+                </div>
+              </div>
+              {/* <!-- End Icon --> */}
+
+              {/* <!-- Right Content --> */}
+              <div className="grow pt-0.5 pb-8">
+                <h3 className="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white">
+                  Move to Mnt Washington Valley
+                </h3>
+                <p className="mt-1 text-sm text-gray-600 dark:text-neutral-400">
+                  Home sweet home
+                </p>
+              </div>
+              {/* <!-- End Right Content --> */}
+            </div>
+            {/* <!-- End Item --> */}
+
+            {/* <!-- Heading --> */}
+            <div className="ps-2 my-2 first:mt-0">
+              <h3 className="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400">
+                September, 2023
+              </h3>
+            </div>
+            {/* <!-- End Heading --> */}
+
+            {/* <!-- Item --> */}
+            <div className="flex gap-x-3">
+              {/* <!-- Icon --> */}
+              <div className="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
+                <div className="relative z-10 size-7 flex justify-center items-center">
+                  <div className="size-2 rounded-full bg-gray-400 dark:bg-neutral-600"></div>
+                </div>
+              </div>
+              {/* <!-- End Icon --> */}
+
+              {/* <!-- Right Content --> */}
+              <div className="grow pt-0.5 pb-8">
+                <h3 className="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white">
+                  Player 3 enters the world
+                </h3>
+                <p className="mt-1 text-sm text-gray-600 dark:text-neutral-400">
+                  Just chill for now... 😉
+                </p>
+              </div>
+              {/* <!-- End Right Content --> */}
+            </div>
+            {/* <!-- End Item --> */}
+          </div>
+          {/* <!-- End Timeline --> */}
+        </div>
+
         <div className="flex flex-col md:grid md:grid-cols-2">
-          <p className="text-center text-base md:text-lg font-normal mb-6 text-neutral-700 dark:text-neutral-200 mx-auto py-2">
-            I enjoy trying to understand peoples personalities and how they tick
-          </p>
-          <p className="text-center text-base md:text-lg font-normal mb-6 text-neutral-700 dark:text-neutral-200 mx-auto py-2">
-            I enjoy trying to understand computers and what makes them tick
-          </p>
+          <p className="text-center text-base md:text-lg font-normal mb-6 text-neutral-700 dark:text-neutral-200 mx-auto py-2"></p>
+          <p className="text-center text-base md:text-lg font-normal mb-6 text-neutral-700 dark:text-neutral-200 mx-auto py-2"></p>
         </div>
 
         <Suspense fallback={<div>coming soon</div>}>
