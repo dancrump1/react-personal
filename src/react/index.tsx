@@ -528,7 +528,7 @@ function App() {
         </div>
       </div>
 
-      <h2 className="h-[55px] mt-20 relative z-10 text-5xl bg-clip-text md:text-7xl text-transparent bg-gradient-to-b from-neutral-500 to-neutral-600 text-center font-sans font-bold lg:h-[85px] md:h-[75px]">
+      <h2 className="mt-20 relative z-10 text-5xl bg-clip-text md:text-7xl text-transparent bg-gradient-to-b from-neutral-500 to-neutral-600 text-center font-sans font-bold">
         Some of my{" "}
         <span className="bg-clip-text bg-gradient-to-r to-emerald-700 from-sky-600 dark:to-emerald-600 dark:from-sky-400">
           Projects
@@ -587,7 +587,7 @@ function App() {
         />
       </div>
 
-      <div className="h-screen w-full rounded-md md:items-center md:justify-center dark:bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+      <div className="w-full rounded-md md:items-center md:justify-center dark:bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
         <h2 className="h-[55px] mt-20 relative z-10 text-5xl bg-clip-text md:text-7xl text-transparent bg-gradient-to-b from-neutral-500 to-neutral-600 text-center font-sans font-bold lg:h-[85px] md:h-[75px]">
           About{" "}
           <span className="bg-clip-text bg-gradient-to-r to-emerald-700 from-sky-600 dark:to-emerald-600 dark:from-sky-400">
@@ -601,9 +601,18 @@ function App() {
           career.
         </p>
 
+        <img
+          src={
+            fun === "business"
+              ? "/local/profile.jpg"
+              : "/local/bw_paintball.jpg"
+          }
+          className="mx-auto object-cover rounded-full md:max-h-[50vh]"
+          alt="Picture of Dan"
+        />
         <div className="flex flex-col md:grid md:grid-cols-2">
           <p className="text-center text-base md:text-lg font-normal mb-6 text-neutral-700 dark:text-neutral-200 mx-auto py-2">
-           I enjoy trying to understand peoples personalities and how they tick
+            I enjoy trying to understand peoples personalities and how they tick
           </p>
           <p className="text-center text-base md:text-lg font-normal mb-6 text-neutral-700 dark:text-neutral-200 mx-auto py-2">
             I enjoy trying to understand computers and what makes them tick
