@@ -546,6 +546,15 @@ function App() {
           cta={"gelinassidding.com"}
           img="/local/gelinas.png"
         />
+          <ProjectCard
+            header={"Shop Country Stores"}
+            description={
+              "A good moral project that I thought would be an amazing starting point for my portfolio"
+            }
+            url={"https://dancrump2.wixsite.com/shop-country-stores"}
+            cta={"Shop Country Stores"}
+            img="/local/scs.png"
+          />
         <ProjectCard
           header={"WIP OSG Paintball map"}
           description={`A conversation turned into reality, hope to be able to refine this and actually get it onto OSG's website!`}
