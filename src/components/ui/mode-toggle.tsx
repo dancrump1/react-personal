@@ -14,7 +14,7 @@ export function ModeToggle() {
   const { setTheme, setFun } = useTheme();
 
   return (
-    <>
+    <div className="flex gap-4 pt-1 pr-1">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="outline" size="icon">
@@ -31,7 +31,7 @@ export function ModeToggle() {
             Dark
           </DropdownMenuItem>
           <DropdownMenuItem onClick={() => setTheme("system")}>
-            System
+            System (default)
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
@@ -52,14 +52,14 @@ export function ModeToggle() {
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end">
+          <DropdownMenuItem onClick={() => setFun("business")}>
+            Business 🕴️ (default)
+          </DropdownMenuItem>
           <DropdownMenuItem onClick={() => setFun("party")}>
             Party 🎉
           </DropdownMenuItem>
-          <DropdownMenuItem onClick={() => setFun("business")}>
-            Business 🕴️
-          </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
-    </>
+    </div>
   );
 }
