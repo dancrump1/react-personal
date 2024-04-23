@@ -556,6 +556,13 @@ function App() {
           img="/local/scs.png"
         />
         <ProjectCard
+          header={"Ned Ninja"}
+          description={"A buddy and his fish 🎣"}
+          url={"http://app-feeney.k9rria1zz3-rz83yxpn04d7.p.temp-site.link/"}
+          cta={"Ned Ninja"}
+          img="/local/ned.png"
+        />
+        <ProjectCard
           header={"WIP OSG Paintball map"}
           description={`A conversation turned into reality, hope to be able to refine this and actually get it onto OSG's website!`}
           url={"https://test-hover-map.multiscreensite.com/"}
