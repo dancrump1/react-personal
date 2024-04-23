@@ -540,15 +540,6 @@ function App() {
       </p>
       <div className="flex flex-wrap h-5/6 justify-center px-12 gap-x-2 md:gap-x-12 dark:bg-black/[0.96] antialiased bg-grid-white/[0.02]">
         <ProjectCard
-          header={"techdiff.io V1"}
-          description={
-            "I had started this project in Twig/PHP, but wanted to jump to client rendered code"
-          }
-          url={"http://old-techdiff.k9rria1zz3-rz83yxpn04d7.p.temp-site.link/"}
-          cta={"old tech diff site"}
-          img="/local/old_techdiff.png"
-        />
-        <ProjectCard
           header={"Gelinas Siding LLC"}
           description={`Given a deadline of 26 days, giving piece of mind to a business owner was my main priority`}
           url={"http://gelinas-siding.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
@@ -561,6 +552,15 @@ function App() {
           url={"https://test-hover-map.multiscreensite.com/"}
           cta={"Would this be cool on their site?"}
           img="/local/osg.png"
+        />
+        <ProjectCard
+          header={"techdiff.io V1"}
+          description={
+            "I had started this project in Twig/PHP, but wanted to jump to client rendered code"
+          }
+          url={"http://old-techdiff.k9rria1zz3-rz83yxpn04d7.p.temp-site.link/"}
+          cta={"old tech diff site"}
+          img="/local/old_techdiff.png"
         />
         <ProjectCard
           header={"Room To Improve Interiors"}
