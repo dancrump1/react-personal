@@ -45,7 +45,6 @@ const siteURL = process.env.PRIMARY_SITE_URL;
 
 const World = lazy(() => import("./components/globe.tsx"));
 
-
 const globeConfig = {
   pointSize: 4,
   globeColor: "#062056",
@@ -470,7 +469,7 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {}
  */
 
 function App() {
-  const theme = useTheme();
+  const { theme, fun } = useTheme();
 
   return (
     <>
@@ -480,11 +479,11 @@ function App() {
       <div className="h-screen w-full rounded-md flex md:items-center md:justify-center dark:bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
         <Spotlight
           className="-top-40 left-[-70px] h-screen md:left-60 md:-top-40"
-          fill={theme.theme === "light" ? "grey" : "white"}
+          fill={theme === "light" ? "grey" : "white"}
         />
         <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
           <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-neutral-700 dark:text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 ">
-            Dan Crump <br />
+            {fun === "business" ? "Daniel Crump" : "Dan Crump"} <br />
             <CardStack
               items={[
                 {
@@ -588,37 +587,61 @@ function App() {
         />
       </div>
 
-      <Suspense fallback={<div>coming soon</div>}>
-        <div className="flex flex-row items-center justify-center py-20 h-screen md:h-auto dark:bg-black bg-white relative w-full">
-          <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4">
-            <motion.div
-              initial={{
-                opacity: 0,
-                y: 20,
-              }}
-              animate={{
-                opacity: 1,
-                y: 0,
-              }}
-              transition={{
-                duration: 1,
-              }}
-              className="div"
-            >
-              <h2 className="text-center text-xl md:text-4xl font-bold text-black dark:text-white">
-                Located in New Hampshire
-              </h2>
-              <p className="text-center text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2 mx-auto">
-                Proud to work locally
-              </p>
-            </motion.div>
-            <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
-            <div className="absolute w-full -bottom-20 h-72 md:h-full z-10">
-              <World data={sampleArcs} globeConfig={globeConfig} />;
+      <div className="h-screen w-full rounded-md md:items-center md:justify-center dark:bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+        <h2 className="h-[55px] mt-20 relative z-10 text-5xl bg-clip-text md:text-7xl text-transparent bg-gradient-to-b from-neutral-500 to-neutral-600 text-center font-sans font-bold lg:h-[85px] md:h-[75px]">
+          About{" "}
+          <span className="bg-clip-text bg-gradient-to-r to-emerald-700 from-sky-600 dark:to-emerald-600 dark:from-sky-400">
+            Me
+          </span>
+        </h2>
+
+        <p className="text-center text-base md:text-lg font-normal mb-6 text-neutral-700 dark:text-neutral-200 mx-auto py-2">
+          I started with toasters and XBox controllers, then moved onto
+          paintball markers and cars. Then, I graduated college and needed a
+          career.
+        </p>
+
+        <div className="flex flex-col md:grid md:grid-cols-2">
+          <p className="text-center text-base md:text-lg font-normal mb-6 text-neutral-700 dark:text-neutral-200 mx-auto py-2">
+           I enjoy trying to understand peoples personalities and how they tick
+          </p>
+          <p className="text-center text-base md:text-lg font-normal mb-6 text-neutral-700 dark:text-neutral-200 mx-auto py-2">
+            I enjoy trying to understand computers and what makes them tick
+          </p>
+        </div>
+
+        <Suspense fallback={<div>coming soon</div>}>
+          <div className="flex flex-row items-center justify-center py-20 h-screen md:h-auto dark:bg-black bg-white relative w-full">
+            <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem]">
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  y: 20,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                transition={{
+                  duration: 1,
+                }}
+                className="div"
+              >
+                <h3 className="text-center text-xl md:text-2xl font-bold text-black dark:text-white">
+                  Located in New Hampshire
+                </h3>
+                <p className="text-center text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2 mx-auto">
+                  Proud to work locally
+                </p>
+              </motion.div>
+              <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
+              <div className="absolute w-full -bottom-20 h-full z-10">
+                <World data={sampleArcs} globeConfig={globeConfig} />;
+              </div>
             </div>
           </div>
-        </div>
-      </Suspense>
+        </Suspense>
+      </div>
     </>
   );
 }
