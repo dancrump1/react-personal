@@ -610,14 +610,14 @@ function App() {
           career.
         </p>
 
-        <div className="flex max-w-[80vw] mx-auto justify-center gap-6">
+        <div className="md:flex max-w-[80vw] mx-auto justify-center gap-6">
           <img
             src={
               fun === "business"
                 ? "/local/profile.jpg"
                 : "/local/bw_paintball.jpg"
             }
-            className="object-cover rounded-full max-h-[25vh]"
+            className="object-cover rounded-full max-h-[25vh] md:mx-auto"
             alt="Picture of Dan"
           />
           {/* <!-- Timeline --> */}
