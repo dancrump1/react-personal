@@ -638,49 +638,98 @@ function App() {
             className="object-cover rounded-full max-h-full md:max-h-96 mx-auto md:mx-0"
             alt="Picture of Dan"
           />
-          <div className="pt-5">
-            <TimelineHeading heading={"Aug 2016"} />
-            <TimelineItem
-              heading="College in Colorado"
-              text="I enjoy trying to understand peoples personalities and how they tick"
-              Icon={() => (
-                <svg
-                  className="flex-shrink-0 size-4 mt-1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
-                  <polyline points="14 2 14 8 20 8"></polyline>
-                  <line x1="16" x2="8" y1="13" y2="13"></line>
-                  <line x1="16" x2="8" y1="17" y2="17"></line>
-                  <line x1="10" x2="8" y1="9" y2="9"></line>
-                </svg>
-              )}
-            />
-            <TimelineItem
-              heading="Move back to NH"
-              text="I enjoy trying to understand computers and what makes them tick"
-              Icon={() => null}
-            />
-            <TimelineItem
-              heading="Move to Mnt Washington Valley"
-              text="Home sweet home"
-              Icon={() => null}
-            />
-            <TimelineHeading heading={"Sept 2023"} />
-            <TimelineItem
-              heading="Player 3 enters the world"
-              text="Just chill for now... 😉"
-              Icon={() => null}
-            />
-          </div>
+          {fun === "party" ? (
+            <div className="pt-5">
+              <TimelineHeading heading={"Sept 9, 2011"} />
+              <TimelineItem
+                heading="Paintball @ NHIP"
+                text="Little did I know how much this would affect the course of my life!"
+                Icon={() => null}
+              />
+              <TimelineHeading heading={"July 9, 2012"} />
+              <TimelineItem
+                heading="AG Paintball"
+                text="Meeting my teammates in the wild"
+                Icon={() => null}
+              />
+              <TimelineHeading heading={"August 25, 2012"} />
+              <TimelineItem
+                heading="Speedball makes an appearance"
+                text="3 man games were a whole new experience"
+                Icon={() => null}
+              />
+              <TimelineHeading heading={"Sept 16, 2012"} />
+              <TimelineItem
+                heading="The first tourney?"
+                text="Didn't even have a jersey, but we went for it!"
+                Icon={() => null}
+              />
+              <TimelineHeading heading={"Jan 28, 2014"} />
+              <TimelineItem
+                heading="Getting 2 new teammates"
+                text="Time for some 5 man tournaments"
+                Icon={() => null}
+              />
+             
+              <TimelineHeading heading={"Apr 28, 2014"} />
+              <TimelineItem
+                heading="Bringing college friends to OSG"
+                text="Knowing some of my OSG teammates went to UNH made the blend so much simpler"
+                Icon={() => null}
+              />
+              <TimelineHeading heading={"Apr 5, 2017"} />
+              <TimelineItem
+                heading="The move to CO leads me to Blitz paintball"
+                text="Here I was promoted to head ref for the summer and enjoyed learning about tons of different people and play styles"
+                Icon={() => null}
+              />
+             
+            </div>
+          ) : (
+            <div className="pt-5">
+              <TimelineHeading heading={"Aug 2016"} />
+              <TimelineItem
+                heading="College in Colorado"
+                text="I enjoy trying to understand peoples personalities and how they tick"
+                Icon={() => (
+                  <svg
+                    className="flex-shrink-0 size-4 mt-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" x2="8" y1="13" y2="13"></line>
+                    <line x1="16" x2="8" y1="17" y2="17"></line>
+                    <line x1="10" x2="8" y1="9" y2="9"></line>
+                  </svg>
+                )}
+              />
+              <TimelineItem
+                heading="Move back to NH"
+                text="I enjoy trying to understand computers and what makes them tick"
+                Icon={() => null}
+              />
+              <TimelineItem
+                heading="Move to Mnt Washington Valley"
+                text="Home sweet home"
+                Icon={() => null}
+              />
+              <TimelineHeading heading={"Sept 2023"} />
+              <TimelineItem
+                heading="Player 3 enters the world"
+                text="Just chill for now... 😉"
+                Icon={() => null}
+              />
+            </div>
+          )}
         </div>
 
         <Suspense fallback={<div>coming soon</div>}>
