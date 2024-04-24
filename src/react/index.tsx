@@ -538,7 +538,7 @@ function App() {
         Psttt.... notice anything missing? Hint: it's styling... styling is
         missing
       </p>
-      <div className="grid grid-cols-3 h-5/6 justify-center px-12 gap-x-2 dark:bg-black/[0.96] antialiased bg-grid-white/[0.02]">
+      <div className="grid grid-cols-1 md:grid-cols-3 h-5/6 justify-center px-12 gap-x-2 dark:bg-black/[0.96] antialiased bg-grid-white/[0.02]">
         <ProjectCard
           header={"Gelinas Siding LLC"}
           description={`Given a deadline of 26 days, giving piece of mind to a business owner was my main priority`}
@@ -555,7 +555,7 @@ function App() {
           url={"https://dancrump2.wixsite.com/shop-country-stores"}
           cta={"Shop Country Stores"}
           img="/local/scs.png"
-          cardClass="col-span-2"
+          cardClass="md:col-span-2"
           perspective="2500px"
         />
         <ProjectCard
@@ -564,7 +564,7 @@ function App() {
           url={"http://app-feeney.k9rria1zz3-rz83yxpn04d7.p.temp-site.link/"}
           cta={"Ned Ninja"}
           img="/local/ned.png"
-          cardClass="col-span-2"
+          cardClass="md:col-span-2"
           perspective="2500px"
         />
         <ProjectCard
@@ -609,7 +609,7 @@ function App() {
           url={"http://dan.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
           cta={"An oldie but a goodie!"}
           img="/local/old.png"
-          cardClass="col-span-3"
+          cardClass="md:col-span-3"
           perspective="5000px"
         />
       </div>
@@ -635,11 +635,11 @@ function App() {
                 ? "/local/bw_ry_wedding.jpg"
                 : "/local/bw_paintball.jpg"
             }
-            className="object-cover rounded-full max-h-[25vh] mx-auto md:mx-0"
+            className="object-cover rounded-full max-h-full md:max-h-96 mx-auto md:mx-0"
             alt="Picture of Dan"
           />
           {/* <!-- Timeline --> */}
-          <div>
+          <div className="pt-5">
             {/* <!-- Heading --> */}
             <div className="ps-2 my-2 first:mt-0">
               <h3 className="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400">
@@ -771,10 +771,7 @@ function App() {
           {/* <!-- End Timeline --> */}
         </div>
 
-        <div className="flex flex-col md:grid md:grid-cols-2">
-          <p className="text-center text-base md:text-lg font-normal mb-6 text-neutral-700 dark:text-neutral-200 mx-auto py-2"></p>
-          <p className="text-center text-base md:text-lg font-normal mb-6 text-neutral-700 dark:text-neutral-200 mx-auto py-2"></p>
-        </div>
+       
 
         <Suspense fallback={<div>coming soon</div>}>
           <div className="flex flex-row items-center justify-center py-20 h-screen md:h-auto dark:bg-black bg-white relative w-full">
