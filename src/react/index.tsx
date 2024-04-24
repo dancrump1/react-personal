@@ -613,7 +613,7 @@ function App() {
         />
       </div>
 
-      <div className="w-full rounded-md dark:bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+      <div className="w-full dark:bg-black/[0.96] antialiased bg-grid-white/[0.02] relative">
         <h2 className="h-[100px] mt-40 relative z-10 text-5xl bg-clip-text md:text-7xl text-transparent bg-gradient-to-b from-neutral-500 to-neutral-600 text-center font-sans font-bold">
           About{" "}
           <span className="bg-clip-text bg-gradient-to-r to-emerald-700 from-sky-600 dark:to-emerald-600 dark:from-sky-400">
@@ -628,6 +628,10 @@ function App() {
         </p>
 
         <div className="max-w-[80vw] mx-auto md:flex md:justify-center md:gap-6">
+          <Spotlight
+            className="h-screen hidden md:block md:left-40 md:-top-0"
+            fill={theme === "light" ? "grey" : "white"}
+          />
           <img
             src={
               fun === "business"
@@ -783,7 +787,7 @@ function App() {
                   Located in New Hampshire
                 </h3>
                 <p className="text-center text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2 mx-auto">
-                  Proud to work locally
+                  Proud to work locally and with people across our world
                 </p>
               </motion.div>
               <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
