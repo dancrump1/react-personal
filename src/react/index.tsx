@@ -613,7 +613,7 @@ function App() {
         />
       </div>
 
-      <div className="w-full rounded-md md:items-center md:justify-center dark:bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+      <div className="w-full rounded-md dark:bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
         <h2 className="h-[100px] mt-40 relative z-10 text-5xl bg-clip-text md:text-7xl text-transparent bg-gradient-to-b from-neutral-500 to-neutral-600 text-center font-sans font-bold">
           About{" "}
           <span className="bg-clip-text bg-gradient-to-r to-emerald-700 from-sky-600 dark:to-emerald-600 dark:from-sky-400">
@@ -634,7 +634,7 @@ function App() {
                 ? "/local/bw_ry_wedding.jpg"
                 : "/local/bw_paintball.jpg"
             }
-            className={`object-cover rounded-full max-h-[50vh] md:max-w-[25vw] md:max-h-screen mx-auto md:mx-0`}
+            className={`object-cover rounded-full h-[50vh] md:w-[25vw] md:h-[80vh] mx-auto md:mx-0`}
             alt="Picture of Dan"
           />
           {fun === "party" ? (
