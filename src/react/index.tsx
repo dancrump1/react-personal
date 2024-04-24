@@ -63,7 +63,6 @@ const globeConfig = {
   arcLength: 0.9,
   rings: 1,
   maxRings: 3,
-  initialPosition: { lat: 43.9792, lng: -71.1203 },
   autoRotate: true,
   autoRotateSpeed: 2,
 };
@@ -615,7 +614,7 @@ function App() {
       </div>
 
       <div className="w-full rounded-md md:items-center md:justify-center dark:bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
-        <h2 className="h-[55px] mt-20 relative z-10 text-5xl bg-clip-text md:text-7xl text-transparent bg-gradient-to-b from-neutral-500 to-neutral-600 text-center font-sans font-bold lg:h-[85px] md:h-[75px]">
+        <h2 className="h-[100px] mt-40 relative z-10 text-5xl bg-clip-text md:text-7xl text-transparent bg-gradient-to-b from-neutral-500 to-neutral-600 text-center font-sans font-bold">
           About{" "}
           <span className="bg-clip-text bg-gradient-to-r to-emerald-700 from-sky-600 dark:to-emerald-600 dark:from-sky-400">
             Me
@@ -764,7 +763,7 @@ function App() {
         </div>
 
         <Suspense fallback={<div>coming soon</div>}>
-          <div className="flex flex-row items-center justify-center py-20 h-screen md:h-auto dark:bg-black bg-white relative w-full">
+          <div className="flex flex-row items-center justify-center pt-20 h-screen md:h-auto dark:bg-black bg-white relative w-full">
             <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem]">
               <motion.div
                 initial={{
