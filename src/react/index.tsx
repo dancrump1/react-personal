@@ -600,10 +600,10 @@ function App() {
           computers...
         </p>
 
-        <div className="max-w-[80vw] mx-auto md:flex md:justify-center md:gap-6">
+        <div className="max-w-[80vw] mx-auto md:flex md:justify-center md:gap-6 py-3 overflow-hidden">
           <Spotlight
             className="h-screen hidden md:block md:left-40 md:-top-0"
-            fill={theme === "light" ? "grey" : "white"}
+            fill="white"
           />
           <img
             src={
@@ -611,11 +611,11 @@ function App() {
                 ? "/local/bw_ry_wedding.jpg"
                 : "/local/bw_paintball.jpg"
             }
-            className={`object-cover rounded-full h-[50vh] md:w-[25vw] md:h-[80vh] mx-auto md:mx-0`}
+            className={`object-cover rounded-full h-[50vh] md:w-[25vw] md:h-[80vh] mx-auto md:mx-0 z-10 pt-5`}
             alt="Picture of Dan"
           />
           {fun === "party" ? (
-            <div className="pt-5">
+            <div className="pt-5 z-10 pointer-events-none">
               <TimelineHeading heading={"Sept 9, 2011"} />
               <TimelineItem
                 heading="Paintball @ NHIP"
@@ -661,7 +661,7 @@ function App() {
               />
             </div>
           ) : (
-            <div className="pt-5">
+            <div className="pt-5 z-10 pointer-events-none">
               <TimelineHeading heading={"Aug 2016"} />
               <TimelineItem
                 heading="College in Colorado"
@@ -737,6 +737,10 @@ function App() {
               />
             </div>
           )}
+          <canvas
+            id="fluids"
+            className="h-screen w-full absolute z0"
+          ></canvas>
         </div>
 
         <Suspense fallback={<div>coming soon</div>}>
@@ -771,7 +775,6 @@ function App() {
           </div>
         </Suspense>
       </div>
-      <FluidSection />
     </>
   );
 }
@@ -890,21 +893,19 @@ const ProjectCard = ({
 const TimelineItem = ({ heading, text, Icon }) => {
   return (
     <div className="flex gap-x-3">
-      <div className="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
+      <div className="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-neutral-700">
         <div className="relative z-10 size-7 flex justify-center items-center">
-          <div className="size-2 rounded-full bg-gray-400 dark:bg-neutral-600"></div>
+          <div className="size-2 rounded-full bg-neutral-600"></div>
         </div>
       </div>
 
       {/* <!-- Right Content --> */}
       <div className="grow pt-0.5 pb-8">
-        <h3 className="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white">
+        <h3 className="flex gap-x-1.5 font-semibold text-white">
           <Icon />
           {heading}
         </h3>
-        <p className="mt-1 text-sm text-gray-600 dark:text-neutral-400">
-          {text}
-        </p>
+        <p className="mt-1 text-sm text-neutral-200">{text}</p>
       </div>
       {/* <!-- End Right Content --> */}
     </div>
@@ -914,32 +915,9 @@ const TimelineItem = ({ heading, text, Icon }) => {
 const TimelineHeading = ({ heading }) => {
   return (
     <div className="ps-2 my-2 first:mt-0">
-      <h3 className="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400">
+      <h3 className="text-xs font-medium uppercase text-neutral-300">
         {heading}
       </h3>
-    </div>
-  );
-};
-
-const FluidSection = () => {
-  return (
-    <div
-      id="container"
-      className="mt-20 flex flex-col items-center w-full h-screen overflow-hidden"
-    >
-      <h2 className="a-second-title">
-        <a
-          href="https://www.linkedin.com/in/danielacrump/"
-          rel="noreferrer"
-          target="_blank"
-        >
-          LinkedIn
-        </a>
-        <a href="https://github.com/dancrump1" rel="noreferrer" target="_blank">
-          GitHub
-        </a>
-      </h2>
-      <canvas id="fluids" className="h-screen w-screen"></canvas>
     </div>
   );
 };

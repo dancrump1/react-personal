@@ -137,7 +137,7 @@ $(() => {
       supportLinearFiltering = gl.getExtension("OES_texture_half_float_linear");
     }
 
-    // gl.clearColor(0.0, 0.0, 0.0, 1.0);
+    gl.clearColor(0.0, 0.0, 0.0, 0.0);
 
     const halfFloatTexType = isWebGL2 ? gl.HALF_FLOAT : halfFloat.HALF_FLOAT_OES;
     let formatRGBA;
@@ -691,12 +691,13 @@ $(() => {
 
   let lastTime = Date.now();
   multipleSplats(parseInt(Math.random() * 20) + 5);
+  
   update();
 
   function update() {
     resizeCanvas();
 
-    const dt = Math.min((Date.now() - lastTime) / 1000, 0.016);
+    const dt = Math.min((Date.now() - lastTime) / 10, 0.016);
     lastTime = Date.now();
 
     gl.viewport(0, 0, textureWidth, textureHeight);
