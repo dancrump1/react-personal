@@ -623,9 +623,9 @@ function App() {
         </h2>
 
         <p className="text-center text-base md:text-lg font-normal mb-6 text-neutral-700 dark:text-neutral-200 mx-auto py-2">
-          I started with toasters and XBox controllers, then moved onto
-          paintball markers and cars. Then, I graduated college and needed a
-          career.
+          Tearing apart toasters and XBox controllers, then paintball markers
+          and cars. After I graduated college, I turned my attention towards
+          computers...
         </p>
 
         <div className="max-w-[80vw] mx-auto md:flex md:justify-center md:gap-6">
@@ -638,140 +638,50 @@ function App() {
             className="object-cover rounded-full max-h-full md:max-h-96 mx-auto md:mx-0"
             alt="Picture of Dan"
           />
-          {/* <!-- Timeline --> */}
           <div className="pt-5">
-            {/* <!-- Heading --> */}
-            <div className="ps-2 my-2 first:mt-0">
-              <h3 className="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400">
-                Aug, 2016
-              </h3>
-            </div>
-            {/* <!-- End Heading --> */}
-
-            {/* <!-- Item --> */}
-            <div className="flex gap-x-3">
-              {/* <!-- Icon --> */}
-              <div className="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
-                <div className="relative z-10 size-7 flex justify-center items-center">
-                  <div className="size-2 rounded-full bg-gray-400 dark:bg-neutral-600"></div>
-                </div>
-              </div>
-              {/* <!-- End Icon --> */}
-
-              {/* <!-- Right Content --> */}
-              <div className="grow pt-0.5 pb-8">
-                <h3 className="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white">
-                  <svg
-                    className="flex-shrink-0 size-4 mt-1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
-                    <polyline points="14 2 14 8 20 8"></polyline>
-                    <line x1="16" x2="8" y1="13" y2="13"></line>
-                    <line x1="16" x2="8" y1="17" y2="17"></line>
-                    <line x1="10" x2="8" y1="9" y2="9"></line>
-                  </svg>
-                  College in Colorado
-                </h3>
-                <p className="mt-1 text-sm text-gray-600 dark:text-neutral-400">
-                  I enjoy trying to understand peoples personalities and how
-                  they tick
-                </p>
-              </div>
-              {/* <!-- End Right Content --> */}
-            </div>
-            {/* <!-- End Item --> */}
-
-            {/* <!-- Item --> */}
-            <div className="flex gap-x-3">
-              {/* <!-- Icon --> */}
-              <div className="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
-                <div className="relative z-10 size-7 flex justify-center items-center">
-                  <div className="size-2 rounded-full bg-gray-400 dark:bg-neutral-600"></div>
-                </div>
-              </div>
-              {/* <!-- End Icon --> */}
-
-              {/* <!-- Right Content --> */}
-              <div className="grow pt-0.5 pb-8">
-                <h3 className="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white">
-                  Move back to NH
-                </h3>
-                <p className="mt-1 text-sm text-gray-600 dark:text-neutral-400">
-                  I enjoy trying to understand computers and what makes them
-                  tick
-                </p>
-              </div>
-              {/* <!-- End Right Content --> */}
-            </div>
-            {/* <!-- End Item --> */}
-
-            {/* <!-- Item --> */}
-            <div className="flex gap-x-3">
-              {/* <!-- Icon --> */}
-              <div className="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
-                <div className="relative z-10 size-7 flex justify-center items-center">
-                  <div className="size-2 rounded-full bg-gray-400 dark:bg-neutral-600"></div>
-                </div>
-              </div>
-              {/* <!-- End Icon --> */}
-
-              {/* <!-- Right Content --> */}
-              <div className="grow pt-0.5 pb-8">
-                <h3 className="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white">
-                  Move to Mnt Washington Valley
-                </h3>
-                <p className="mt-1 text-sm text-gray-600 dark:text-neutral-400">
-                  Home sweet home
-                </p>
-              </div>
-              {/* <!-- End Right Content --> */}
-            </div>
-            {/* <!-- End Item --> */}
-
-            {/* <!-- Heading --> */}
-            <div className="ps-2 my-2 first:mt-0">
-              <h3 className="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400">
-                September, 2023
-              </h3>
-            </div>
-            {/* <!-- End Heading --> */}
-
-            {/* <!-- Item --> */}
-            <div className="flex gap-x-3">
-              {/* <!-- Icon --> */}
-              <div className="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
-                <div className="relative z-10 size-7 flex justify-center items-center">
-                  <div className="size-2 rounded-full bg-gray-400 dark:bg-neutral-600"></div>
-                </div>
-              </div>
-              {/* <!-- End Icon --> */}
-
-              {/* <!-- Right Content --> */}
-              <div className="grow pt-0.5 pb-8">
-                <h3 className="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white">
-                  Player 3 enters the world
-                </h3>
-                <p className="mt-1 text-sm text-gray-600 dark:text-neutral-400">
-                  Just chill for now... 😉
-                </p>
-              </div>
-              {/* <!-- End Right Content --> */}
-            </div>
-            {/* <!-- End Item --> */}
+            <TimelineHeading heading={"Aug 2016"} />
+            <TimelineItem
+              heading="College in Colorado"
+              text="I enjoy trying to understand peoples personalities and how they tick"
+              Icon={() => (
+                <svg
+                  className="flex-shrink-0 size-4 mt-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" x2="8" y1="13" y2="13"></line>
+                  <line x1="16" x2="8" y1="17" y2="17"></line>
+                  <line x1="10" x2="8" y1="9" y2="9"></line>
+                </svg>
+              )}
+            />
+            <TimelineItem
+              heading="Move back to NH"
+              text="I enjoy trying to understand computers and what makes them tick"
+              Icon={() => null}
+            />
+            <TimelineItem
+              heading="Move to Mnt Washington Valley"
+              text="Home sweet home"
+              Icon={() => null}
+            />
+            <TimelineHeading heading={"Sept 2023"} />
+            <TimelineItem
+              heading="Player 3 enters the world"
+              text="Just chill for now... 😉"
+              Icon={() => null}
+            />
           </div>
-          {/* <!-- End Timeline --> */}
         </div>
-
-       
 
         <Suspense fallback={<div>coming soon</div>}>
           <div className="flex flex-row items-center justify-center py-20 h-screen md:h-auto dark:bg-black bg-white relative w-full">
@@ -917,5 +827,39 @@ const ProjectCard = ({
         </CardItem>
       </CardBody>
     </CardContainer>
+  );
+};
+
+const TimelineItem = ({ heading, text, Icon }) => {
+  return (
+    <div className="flex gap-x-3">
+      <div className="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
+        <div className="relative z-10 size-7 flex justify-center items-center">
+          <div className="size-2 rounded-full bg-gray-400 dark:bg-neutral-600"></div>
+        </div>
+      </div>
+
+      {/* <!-- Right Content --> */}
+      <div className="grow pt-0.5 pb-8">
+        <h3 className="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white">
+          <Icon />
+          {heading}
+        </h3>
+        <p className="mt-1 text-sm text-gray-600 dark:text-neutral-400">
+          {text}
+        </p>
+      </div>
+      {/* <!-- End Right Content --> */}
+    </div>
+  );
+};
+
+const TimelineHeading = ({ heading }) => {
+  return (
+    <div className="ps-2 my-2 first:mt-0">
+      <h3 className="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400">
+        {heading}
+      </h3>
+    </div>
   );
 };
