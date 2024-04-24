@@ -670,7 +670,7 @@ function App() {
                 text="Time for some 5 man tournaments"
                 Icon={() => null}
               />
-             
+
               <TimelineHeading heading={"Apr 28, 2014"} />
               <TimelineItem
                 heading="Bringing college friends to OSG"
@@ -683,7 +683,6 @@ function App() {
                 text="Here I was promoted to head ref for the summer and enjoyed learning about tons of different people and play styles"
                 Icon={() => null}
               />
-             
             </div>
           ) : (
             <div className="pt-5">
@@ -712,16 +711,48 @@ function App() {
                   </svg>
                 )}
               />
+
+              <TimelineHeading heading={"Apr 5, 2017"} />
+              <TimelineItem
+                heading="The move to CO leads me to Blitz paintball"
+                text="Here I was promoted to head ref for the summer and enjoyed learning about tons of different people and play styles"
+                Icon={() => null}
+              />
+
+              <TimelineHeading heading={"May 18, 2018"} />
               <TimelineItem
                 heading="Move back to NH"
                 text="I enjoy trying to understand computers and what makes them tick"
                 Icon={() => null}
               />
+              <TimelineHeading heading={"July 20, 2018"} />
+
               <TimelineItem
                 heading="Move to Mnt Washington Valley"
                 text="Home sweet home"
                 Icon={() => null}
               />
+              <TimelineHeading heading={"Sept, 2018"} />
+
+              <TimelineItem
+                heading="MERN stack coding bootcamp"
+                text="Foundational knowledge I still use today!"
+                Icon={() => null}
+              />
+
+              <TimelineHeading heading={"May, 18 2023"} />
+              <TimelineItem
+                heading="Married my best friend"
+                text="Science can not have access to this 🦄"
+                Icon={() => null}
+              />
+              <TimelineHeading heading={"July 2023"} />
+              <TimelineItem
+                heading="Bought property in the valley"
+                text="A slice of paradise to start setting roots down into!"
+                Icon={() => null}
+              />
+
               <TimelineHeading heading={"Sept 2023"} />
               <TimelineItem
                 heading="Player 3 enters the world"
