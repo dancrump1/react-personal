@@ -538,13 +538,14 @@ function App() {
         Psttt.... notice anything missing? Hint: it's styling... styling is
         missing
       </p>
-      <div className="flex flex-wrap h-5/6 justify-center px-12 gap-x-2 md:gap-x-12 dark:bg-black/[0.96] antialiased bg-grid-white/[0.02]">
+      <div className="grid grid-cols-3 h-5/6 justify-center px-12 gap-x-2 dark:bg-black/[0.96] antialiased bg-grid-white/[0.02]">
         <ProjectCard
           header={"Gelinas Siding LLC"}
           description={`Given a deadline of 26 days, giving piece of mind to a business owner was my main priority`}
           url={"http://gelinas-siding.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
           cta={"gelinassidding.com"}
           img="/local/gelinas.png"
+          cardClass="col-span-1"
         />
         <ProjectCard
           header={"Shop Country Stores"}
@@ -554,6 +555,8 @@ function App() {
           url={"https://dancrump2.wixsite.com/shop-country-stores"}
           cta={"Shop Country Stores"}
           img="/local/scs.png"
+          cardClass="col-span-2"
+          perspective="2500px"
         />
         <ProjectCard
           header={"Ned Ninja"}
@@ -561,6 +564,8 @@ function App() {
           url={"http://app-feeney.k9rria1zz3-rz83yxpn04d7.p.temp-site.link/"}
           cta={"Ned Ninja"}
           img="/local/ned.png"
+          cardClass="col-span-2"
+          perspective="2500px"
         />
         <ProjectCard
           header={"WIP OSG Paintball map"}
@@ -568,6 +573,7 @@ function App() {
           url={"https://test-hover-map.multiscreensite.com/"}
           cta={"Would this be cool on their site?"}
           img="/local/osg.png"
+          cardClass="col-span-1"
         />
         <ProjectCard
           header={"techdiff.io V1"}
@@ -577,6 +583,7 @@ function App() {
           url={"http://old-techdiff.k9rria1zz3-rz83yxpn04d7.p.temp-site.link/"}
           cta={"old tech diff site"}
           img="/local/old_techdiff.png"
+          cardClass="col-span-1"
         />
         <ProjectCard
           header={"Room To Improve Interiors"}
@@ -586,6 +593,7 @@ function App() {
           url={"https://www.roomtoimproveinteriors.com"}
           cta={"Room to Improve"}
           img="/local/rtii.png"
+          cardClass="col-span-1"
         />
         <ProjectCard
           header={"A tool for a friend"}
@@ -593,6 +601,7 @@ function App() {
           url={"http://twitch-clips.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
           cta={"What happend to Heroku?"}
           img="/local/twitch.png"
+          cardClass="col-span-1"
         />
         <ProjectCard
           header={"An old personal site"}
@@ -600,6 +609,8 @@ function App() {
           url={"http://dan.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
           cta={"An oldie but a goodie!"}
           img="/local/old.png"
+          cardClass="col-span-3"
+          perspective="5000px"
         />
       </div>
 
@@ -621,7 +632,7 @@ function App() {
           <img
             src={
               fun === "business"
-                ? "/local/profile.jpg"
+                ? "/local/bw_ry_wedding.jpg"
                 : "/local/bw_paintball.jpg"
             }
             className="object-cover rounded-full max-h-[25vh] mx-auto md:mx-0"
@@ -658,9 +669,9 @@ function App() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   >
                     <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
                     <polyline points="14 2 14 8 20 8"></polyline>
@@ -869,12 +880,24 @@ const HoverCTA = ({ url, text }) => {
   );
 };
 
-const ProjectCard = ({ header, description, url, cta, img }) => {
+const ProjectCard = ({
+  header,
+  description,
+  url,
+  cta,
+  img,
+  cardClass,
+  perspective = "1000px",
+}) => {
   return (
-    <CardContainer className="inter-var">
-      <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+    <CardContainer
+      className="inter-var w-full h-full"
+      containerClassName={cn(cardClass, "w-full")}
+      perspective={perspective}
+    >
+      <CardBody className="bg-gray-50 relative group/card h-full dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] rounded-xl p-6 border  ">
         <CardItem translateZ={15}>
-          <h3 className="text-xl font-bold text-neutral-600 dark:text-white">
+          <h3 className="w-full text-xl font-bold text-neutral-600 dark:text-white">
             {header}
           </h3>
         </CardItem>

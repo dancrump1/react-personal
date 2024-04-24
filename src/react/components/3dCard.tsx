@@ -18,13 +18,15 @@ export const CardContainer = ({
   className,
   containerClassName,
   id,
-  title
+  title,
+  perspective,
 }: {
   children?: React.ReactNode;
   className?: string;
   containerClassName?: string;
   id?: string;
   title?: string;
+  perspective?: string;
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isMouseEntered, setIsMouseEntered] = useState(false);
@@ -52,11 +54,11 @@ export const CardContainer = ({
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
       <div
         className={cn(
-          "py-6 flex items-center justify-center",
+          "py-2 flex items-center justify-center",
           containerClassName
         )}
         style={{
-          perspective: "1000px",
+          perspective: perspective || "1000px",
         }}
         id={id}
         title={title}
@@ -91,7 +93,7 @@ export const CardBody = ({
   return (
     <div
       className={cn(
-        "h-96 w-96 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
+        "h-96 w-full [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
         className
       )}
     >
