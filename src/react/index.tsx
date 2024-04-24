@@ -1,45 +1,18 @@
-import React, { Suspense, lazy, useContext, useEffect, useState } from "react";
+import React, { Suspense, lazy } from "react";
 import { useMotionTemplate, useMotionValue, motion } from "framer-motion";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
-import { Input } from "../components/ui/input";
-import { Button } from "../components/ui/button";
-import { Textarea } from "../components/ui/textarea";
-import { Sheet, SheetTrigger, SheetContent } from "../components/ui/sheet";
-import { Card, CardContent, CardFooter } from "../components/ui/card";
-import "../js/app";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-// SHADCN
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "../components/ui/accordion";
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from "../components/ui/alert-dialog";
 import { ThemeProvider, useTheme } from "../components/ui/theme-provider";
 import { ModeToggle } from "../components/ui/mode-toggle";
 
 // ACETERNITY
-import { CardRotation } from "./components/CardRotation";
-import { BackgroundGradientAnimation } from "./components/GradientBackground.tsx";
-import { GoogleGeminiEffect } from "./components/LineBackground.tsx";
 import { Spotlight } from "./components/Spotlight.tsx";
 import { CardStack } from "./components/CardStack.tsx";
 import { cn } from "./utils/cn.ts";
-import { StickyScroll } from "./components/StickyScrollReveal.tsx";
 import { CardBody, CardContainer, CardItem } from "./components/3dCard.tsx";
-import { SparklesCore } from "./components/Sparkles.tsx";
+
+import "../js/app";
 
 const siteURL = process.env.PRIMARY_SITE_URL;
 
@@ -798,6 +771,7 @@ function App() {
           </div>
         </Suspense>
       </div>
+      <FluidSection />
     </>
   );
 }
@@ -943,6 +917,29 @@ const TimelineHeading = ({ heading }) => {
       <h3 className="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400">
         {heading}
       </h3>
+    </div>
+  );
+};
+
+const FluidSection = () => {
+  return (
+    <div
+      id="container"
+      className="mt-20 flex flex-col items-center w-full h-screen overflow-hidden"
+    >
+      <h2 className="a-second-title">
+        <a
+          href="https://www.linkedin.com/in/danielacrump/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
+        <a href="https://github.com/dancrump1" rel="noreferrer" target="_blank">
+          GitHub
+        </a>
+      </h2>
+      <canvas id="fluids" className="h-screen w-screen"></canvas>
     </div>
   );
 };
