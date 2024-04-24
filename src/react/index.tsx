@@ -634,7 +634,7 @@ function App() {
                 ? "/local/bw_ry_wedding.jpg"
                 : "/local/bw_paintball.jpg"
             }
-            className="object-cover rounded-full max-h-full md:max-h-96 mx-auto md:mx-0"
+            className={`object-cover rounded-full max-h-[50vh] md:max-w-[25vw] md:max-h-screen mx-auto md:mx-0`}
             alt="Picture of Dan"
           />
           {fun === "party" ? (
