@@ -537,7 +537,7 @@ function App() {
         Psttt.... notice anything missing? Hint: it's styling... styling is
         missing
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-3 h-5/6 justify-center px-12 gap-x-2 dark:bg-black/[0.96] antialiased bg-grid-white/[0.02]">
+      <div className="grid grid-cols-1 md:grid-cols-3 h-5/6 justify-center px-4 gap-x-2 dark:bg-black/[0.96] antialiased bg-grid-white/[0.02]">
         <ProjectCard
           header={"Gelinas Siding LLC"}
           description={`Given a deadline of 26 days, giving piece of mind to a business owner was my main priority`}
@@ -621,7 +621,7 @@ function App() {
           </span>
         </h2>
 
-        <p className="text-center text-base md:text-lg font-normal mb-6 text-neutral-700 dark:text-neutral-200 mx-auto py-2">
+        <p className="text-center text-base md:text-lg px-2 font-normal mb-6 text-neutral-700 dark:text-neutral-200 mx-auto py-2">
           Tearing apart toasters and XBox controllers, then paintball markers
           and cars. After I graduated college, I turned my attention towards
           computers...
