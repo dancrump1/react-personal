@@ -528,7 +528,7 @@ function App() {
         </div>
       </div>
 
-      <h2 className="mt-20 relative z-10 text-5xl bg-clip-text md:text-7xl text-transparent bg-gradient-to-b from-neutral-500 to-neutral-600 text-center font-sans font-bold">
+      <h2 className="h-[100px] mt-20 relative z-10 text-5xl bg-clip-text md:text-7xl text-transparent bg-gradient-to-b from-neutral-500 to-neutral-600 text-center font-sans font-bold">
         Some of my{" "}
         <span className="bg-clip-text bg-gradient-to-r to-emerald-700 from-sky-600 dark:to-emerald-600 dark:from-sky-400">
           Projects
