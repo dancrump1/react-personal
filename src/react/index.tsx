@@ -531,7 +531,7 @@ function App() {
           perspective="2500px"
         />
         <ProjectCard
-          header={"Ned Ninja (Apr 19, 2024"}
+          header={"Ned Ninja (Apr 19, 2024)"}
           description={"A buddy and his fish 🎣"}
           url={"http://app-feeney.k9rria1zz3-rz83yxpn04d7.p.temp-site.link/"}
           cta={"Ned Ninja"}
@@ -568,7 +568,7 @@ function App() {
           cardClass="col-span-1"
         />
         <ProjectCard
-          header={"A tool for a friend (Jan 25, 2020"}
+          header={"A tool for a friend (Jan 25, 2020)"}
           description={"He uses Twitch far too much"}
           url={"http://twitch-clips.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
           cta={"What happend to Heroku?"}
@@ -576,7 +576,7 @@ function App() {
           cardClass="col-span-1"
         />
         <ProjectCard
-          header={"An old personal site (Mar 21, 2019"}
+          header={"An old personal site (Mar 21, 2019)"}
           description={"Back in my coding bootcamp days..."}
           url={"http://dan.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
           cta={"An oldie but a goodie!"}
