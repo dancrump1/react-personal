@@ -511,7 +511,7 @@ function App() {
         Psttt.... notice anything missing? Hint: it's styling... styling is
         missing
       </p>
-      <div className="grid grid-cols-1 mb-6 md:grid-cols-3 h-5/6 justify-center px-4 gap-14 dark:bg-black/[0.96] antialiased bg-grid-white/[0.02]">
+      <div className="grid overflow-hidden grid-cols-1 mb-6 md:grid-cols-3 h-5/6 justify-center px-4 md:px-16 gap-14 dark:bg-black/[0.96] antialiased bg-grid-white/[0.02]">
         <ProjectCard
           header={"Gelinas Siding LLC (Apr 10, 2024)"}
           description={`Given a deadline of 26 days, giving piece of mind to a business owner was my main priority`}
