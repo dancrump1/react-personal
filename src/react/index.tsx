@@ -587,14 +587,14 @@ function App() {
       </div>
 
       <div className="w-full dark:bg-black/[0.96] antialiased bg-grid-white/[0.02] relative">
-        <h2 className="h-[100px] mt-40 relative z-10 text-5xl bg-clip-text md:text-7xl text-transparent bg-gradient-to-b from-neutral-500 to-neutral-600 text-center font-sans font-bold">
+        <h2 className="pointer-events-none h-[100px] mt-40 relative z-10 text-5xl bg-clip-text md:text-7xl text-transparent bg-gradient-to-b from-neutral-500 to-neutral-600 text-center font-sans font-bold">
           About{" "}
           <span className="bg-clip-text bg-gradient-to-r to-emerald-700 from-sky-600 dark:to-emerald-600 dark:from-sky-400">
             Me
           </span>
         </h2>
 
-        <p className="text-center z-10 relative text-base md:text-lg px-2 font-normal mb-6 text-neutral-200 mx-auto py-2">
+        <p className="pointer-events-none text-center z-10 relative text-base md:text-lg px-2 font-normal mb-6 text-neutral-200 mx-auto py-2">
           Tearing apart toasters and XBox controllers, then paintball markers
           and cars. After I graduated college, I turned my attention towards
           computers...
@@ -611,7 +611,7 @@ function App() {
                 ? "/local/bw_ry_wedding.jpg"
                 : "/local/bw_paintball.jpg"
             }
-            className={`object-cover rounded-full h-[50vh] md:w-[25vw] md:h-[80vh] mx-auto md:mx-0 z-10 pt-5`}
+            className={`pointer-events-none object-cover rounded-full h-[50vh] md:w-[25vw] md:h-[80vh] mx-auto md:mx-0 z-10 pt-5`}
             alt="Picture of Dan"
           />
           {fun === "party" ? (
