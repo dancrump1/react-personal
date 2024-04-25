@@ -691,7 +691,7 @@ $(() => {
 
   let lastTime = Date.now();
   multipleSplats(parseInt(Math.random() * 20) + 5);
-  
+
   update();
 
   function update() {
@@ -859,18 +859,11 @@ $(() => {
     }
   }
 
-  canvas.addEventListener("mousemove", (e) => {
-    pointers[0].moved = pointers[0].down;
-    pointers[0].dx = (e.offsetX - pointers[0].x) * 10.0;
-    pointers[0].dy = (e.offsetY - pointers[0].y) * 10.0;
-    pointers[0].x = e.offsetX;
-    pointers[0].y = e.offsetY;
-  });
 
   canvas.addEventListener(
     "touchmove",
     (e) => {
-      e.preventDefault();
+      // e.preventDefault();
       const touches = e.targetTouches;
       for (let i = 0; i < touches.length; i++) {
         let pointer = pointers[i];
@@ -884,7 +877,12 @@ $(() => {
     false
   );
 
-  canvas.addEventListener("mousemove", () => {
+  canvas.addEventListener("mousemove", (e) => {
+    pointers[0].moved = pointers[0].down;
+    pointers[0].dx = (e.offsetX - pointers[0].x) * 10.0;
+    pointers[0].dy = (e.offsetY - pointers[0].y) * 10.0;
+    pointers[0].x = e.offsetX;
+    pointers[0].y = e.offsetY;
     pointers[0].down = true;
     pointers[0].color = [
       Math.random() + 0.2,
@@ -894,11 +892,10 @@ $(() => {
   });
 
   canvas.addEventListener("touchstart", (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     const touches = e.targetTouches;
     for (let i = 0; i < touches.length; i++) {
       if (i >= pointers.length) pointers.push(new pointerPrototype());
-
       pointers[i].id = touches[i].identifier;
       pointers[i].down = true;
       pointers[i].x = touches[i].pageX;

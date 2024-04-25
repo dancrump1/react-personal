@@ -594,15 +594,15 @@ function App() {
           </span>
         </h2>
 
-        <p className="text-center text-base md:text-lg px-2 font-normal mb-6 text-neutral-700 dark:text-neutral-200 mx-auto py-2">
+        <p className="text-center z-10 relative text-base md:text-lg px-2 font-normal mb-6 text-neutral-200 mx-auto py-2">
           Tearing apart toasters and XBox controllers, then paintball markers
           and cars. After I graduated college, I turned my attention towards
           computers...
         </p>
 
-        <div className="max-w-[80vw] mx-auto md:flex md:justify-center md:gap-6 py-3 overflow-hidden">
+        <div className="max-w-[80vw] mx-auto flex flex-col md:flex-row md:justify-center md:gap-6 py-3 overflow-hidden">
           <Spotlight
-            className="h-screen hidden md:block md:left-40 md:-top-0"
+            className="h-screen hidden md:block md:left-40 md:-top-0 z-10"
             fill="white"
           />
           <img
@@ -661,7 +661,7 @@ function App() {
               />
             </div>
           ) : (
-            <div className="pt-5 z-10 pointer-events-none">
+            <div className="pt-5 z-10 relative pointer-events-none">
               <TimelineHeading heading={"Aug 2016"} />
               <TimelineItem
                 heading="College in Colorado"
@@ -739,7 +739,7 @@ function App() {
           )}
           <canvas
             id="fluids"
-            className="h-screen w-full absolute z0"
+            className="absolute z-0 inset-0 h-full w-full"
           ></canvas>
         </div>
 
