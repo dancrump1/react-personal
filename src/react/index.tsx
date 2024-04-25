@@ -594,7 +594,7 @@ function App() {
           </span>
         </h2>
 
-        <p className="pointer-events-none text-center z-10 relative text-base md:text-lg px-2 font-normal mb-6 text-neutral-200 mx-auto py-2">
+        <p className="pointer-events-none text-center z-10 relative text-base md:text-lg px-2 font-normal mb-6 dark:text-neutral-200 text-neutral-500 mx-auto py-2">
           Tearing apart toasters and XBox controllers, then paintball markers
           and cars. After I graduated college, I turned my attention towards
           computers...
