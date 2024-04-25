@@ -704,17 +704,30 @@ function App() {
                   Icon={() => null}
                 />
                 <TimelineHeading heading={"July 20, 2018"} />
-
                 <TimelineItem
                   heading="Move to Mnt Washington Valley"
                   text="Home sweet home"
                   Icon={() => null}
                 />
-                <TimelineHeading heading={"Sept, 2018"} />
 
+                <TimelineHeading heading={"Sept, 2018"} />
                 <TimelineItem
                   heading="MERN stack coding bootcamp"
                   text="Foundational knowledge I still use today!"
+                  Icon={() => null}
+                />
+
+                <TimelineHeading heading={"May 2019 - Feb 2023"} />
+                <TimelineItem
+                  heading="React/Redux front end developer"
+                  text="Helped implement modern React features and move from Class components to Func + hook based components"
+                  Icon={() => null}
+                />
+
+                <TimelineHeading heading={"Feb 2023 - Present · 1 yr 3 mos"} />
+                <TimelineItem
+                  heading="Marketing always leads back to the website..."
+                  text="New job making websites for small and large businesses across the country. Primarily focussed on internal process and tooling, but I have learned so much about Front End, Back End, Server and DNS maintenance, and so much more"
                   Icon={() => null}
                 />
 
@@ -724,6 +737,7 @@ function App() {
                   text="Science can not have access to this 🦄"
                   Icon={() => null}
                 />
+
                 <TimelineHeading heading={"July 2023"} />
                 <TimelineItem
                   heading="Bought property in the valley"
