@@ -586,7 +586,7 @@ function App() {
         />
       </div>
 
-      <div className="w-full dark:bg-black/[0.96] antialiased bg-grid-white/[0.02] relative">
+      <div className="w-full dark:bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
         <h2 className="pointer-events-none h-[100px] mt-40 relative z-10 text-5xl bg-clip-text md:text-7xl text-transparent bg-gradient-to-b from-neutral-500 to-neutral-600 text-center font-sans font-bold">
           About{" "}
           <span className="bg-clip-text bg-gradient-to-r to-emerald-700 from-sky-600 dark:to-emerald-600 dark:from-sky-400">
@@ -600,7 +600,7 @@ function App() {
           computers...
         </p>
 
-        <div className="max-w-[80vw] mx-auto flex flex-col md:flex-row md:justify-center md:gap-6 py-3 overflow-hidden">
+        <div className="max-w-[80vw] mx-auto flex flex-col md:flex-row md:justify-center md:gap-6 py-3">
           <Spotlight
             className="h-screen hidden md:block md:left-40 md:-top-0 z-10"
             fill="white"
@@ -614,133 +614,135 @@ function App() {
             className={`pointer-events-none object-cover rounded-full h-[50vh] md:w-[25vw] md:h-[80vh] mx-auto md:mx-0 z-10 pt-5`}
             alt="Picture of Dan"
           />
-          {fun === "party" ? (
-            <div className="pt-5 z-10 pointer-events-none">
-              <TimelineHeading heading={"Sept 9, 2011"} />
-              <TimelineItem
-                heading="Paintball @ NHIP"
-                text="Little did I know how much this would affect the course of my life!"
-                Icon={() => null}
-              />
-              <TimelineHeading heading={"July 9, 2012"} />
-              <TimelineItem
-                heading="AG Paintball"
-                text="Meeting my teammates in the wild"
-                Icon={() => null}
-              />
-              <TimelineHeading heading={"August 25, 2012"} />
-              <TimelineItem
-                heading="Speedball makes an appearance"
-                text="3 man games were a whole new experience"
-                Icon={() => null}
-              />
-              <TimelineHeading heading={"Sept 16, 2012"} />
-              <TimelineItem
-                heading="The first tourney?"
-                text="Didn't even have a jersey, but we went for it!"
-                Icon={() => null}
-              />
-              <TimelineHeading heading={"Jan 28, 2014"} />
-              <TimelineItem
-                heading="Getting 2 new teammates"
-                text="Time for some 5 man tournaments"
-                Icon={() => null}
-              />
+          <div className="pt-5 relative">
+            {fun === "party" ? (
+              <>
+                <TimelineHeading heading={"Sept 9, 2011"} />
+                <TimelineItem
+                  heading="Paintball @ NHIP"
+                  text="Little did I know how much this would affect the course of my life!"
+                  Icon={() => null}
+                />
+                <TimelineHeading heading={"July 9, 2012"} />
+                <TimelineItem
+                  heading="AG Paintball"
+                  text="Meeting my teammates in the wild"
+                  Icon={() => null}
+                />
+                <TimelineHeading heading={"August 25, 2012"} />
+                <TimelineItem
+                  heading="Speedball makes an appearance"
+                  text="3 man games were a whole new experience"
+                  Icon={() => null}
+                />
+                <TimelineHeading heading={"Sept 16, 2012"} />
+                <TimelineItem
+                  heading="The first tourney?"
+                  text="Didn't even have a jersey, but we went for it!"
+                  Icon={() => null}
+                />
+                <TimelineHeading heading={"Jan 28, 2014"} />
+                <TimelineItem
+                  heading="Getting 2 new teammates"
+                  text="Time for some 5 man tournaments"
+                  Icon={() => null}
+                />
 
-              <TimelineHeading heading={"Apr 28, 2014"} />
-              <TimelineItem
-                heading="Bringing college friends to OSG"
-                text="Knowing some of my OSG teammates went to UNH made the blend so much simpler"
-                Icon={() => null}
-              />
-              <TimelineHeading heading={"Apr 5, 2017"} />
-              <TimelineItem
-                heading="The move to CO leads me to Blitz paintball"
-                text="Here I was promoted to head ref for the summer and enjoyed learning about tons of different people and play styles"
-                Icon={() => null}
-              />
-            </div>
-          ) : (
-            <div className="pt-5 z-10 relative pointer-events-none">
-              <TimelineHeading heading={"Aug 2016"} />
-              <TimelineItem
-                heading="College in Colorado"
-                text="I enjoy trying to understand peoples personalities and how they tick"
-                Icon={() => (
-                  <svg
-                    className="flex-shrink-0 size-4 mt-1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
-                    <polyline points="14 2 14 8 20 8"></polyline>
-                    <line x1="16" x2="8" y1="13" y2="13"></line>
-                    <line x1="16" x2="8" y1="17" y2="17"></line>
-                    <line x1="10" x2="8" y1="9" y2="9"></line>
-                  </svg>
-                )}
-              />
+                <TimelineHeading heading={"Apr 28, 2014"} />
+                <TimelineItem
+                  heading="Bringing college friends to OSG"
+                  text="Knowing some of my OSG teammates went to UNH made the blend so much simpler"
+                  Icon={() => null}
+                />
+                <TimelineHeading heading={"Apr 5, 2017"} />
+                <TimelineItem
+                  heading="The move to CO leads me to Blitz paintball"
+                  text="Here I was promoted to head ref for the summer and enjoyed learning about tons of different people and play styles"
+                  Icon={() => null}
+                />
+              </>
+            ) : (
+              <>
+                <TimelineHeading heading={"Aug 2016"} />
+                <TimelineItem
+                  heading="College in Colorado"
+                  text="I enjoy trying to understand peoples personalities and how they tick"
+                  Icon={() => (
+                    <svg
+                      className="flex-shrink-0 size-4 mt-1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                      <polyline points="14 2 14 8 20 8"></polyline>
+                      <line x1="16" x2="8" y1="13" y2="13"></line>
+                      <line x1="16" x2="8" y1="17" y2="17"></line>
+                      <line x1="10" x2="8" y1="9" y2="9"></line>
+                    </svg>
+                  )}
+                />
 
-              <TimelineHeading heading={"Apr 5, 2017"} />
-              <TimelineItem
-                heading="The move to CO leads me to Blitz paintball"
-                text="Here I was promoted to head ref for the summer and enjoyed learning about tons of different people and play styles"
-                Icon={() => null}
-              />
+                <TimelineHeading heading={"Apr 5, 2017"} />
+                <TimelineItem
+                  heading="The move to CO leads me to Blitz paintball"
+                  text="Here I was promoted to head ref for the summer and enjoyed learning about tons of different people and play styles"
+                  Icon={() => null}
+                />
 
-              <TimelineHeading heading={"May 18, 2018"} />
-              <TimelineItem
-                heading="Move back to NH"
-                text="I enjoy trying to understand computers and what makes them tick"
-                Icon={() => null}
-              />
-              <TimelineHeading heading={"July 20, 2018"} />
+                <TimelineHeading heading={"May 18, 2018"} />
+                <TimelineItem
+                  heading="Move back to NH"
+                  text="I enjoy trying to understand computers and what makes them tick"
+                  Icon={() => null}
+                />
+                <TimelineHeading heading={"July 20, 2018"} />
 
-              <TimelineItem
-                heading="Move to Mnt Washington Valley"
-                text="Home sweet home"
-                Icon={() => null}
-              />
-              <TimelineHeading heading={"Sept, 2018"} />
+                <TimelineItem
+                  heading="Move to Mnt Washington Valley"
+                  text="Home sweet home"
+                  Icon={() => null}
+                />
+                <TimelineHeading heading={"Sept, 2018"} />
 
-              <TimelineItem
-                heading="MERN stack coding bootcamp"
-                text="Foundational knowledge I still use today!"
-                Icon={() => null}
-              />
+                <TimelineItem
+                  heading="MERN stack coding bootcamp"
+                  text="Foundational knowledge I still use today!"
+                  Icon={() => null}
+                />
 
-              <TimelineHeading heading={"May, 18 2023"} />
-              <TimelineItem
-                heading="Married my best friend"
-                text="Science can not have access to this 🦄"
-                Icon={() => null}
-              />
-              <TimelineHeading heading={"July 2023"} />
-              <TimelineItem
-                heading="Bought property in the valley"
-                text="A slice of paradise to start setting roots down into!"
-                Icon={() => null}
-              />
+                <TimelineHeading heading={"May, 18 2023"} />
+                <TimelineItem
+                  heading="Married my best friend"
+                  text="Science can not have access to this 🦄"
+                  Icon={() => null}
+                />
+                <TimelineHeading heading={"July 2023"} />
+                <TimelineItem
+                  heading="Bought property in the valley"
+                  text="A slice of paradise to start setting roots down into!"
+                  Icon={() => null}
+                />
 
-              <TimelineHeading heading={"Sept 2023"} />
-              <TimelineItem
-                heading="Player 3 enters the world"
-                text="Just chill for now... 😉"
-                Icon={() => null}
-              />
-            </div>
-          )}
-          <canvas
-            id="fluids"
-            className="absolute z-0 inset-0 h-full w-full"
-          ></canvas>
+                <TimelineHeading heading={"Sept 2023"} />
+                <TimelineItem
+                  heading="Player 3 enters the world"
+                  text="Just chill for now... 😉"
+                  Icon={() => null}
+                />
+              </>
+            )}
+            <canvas
+              id="fluids"
+              className="absolute z-0 inset-0 h-full w-full"
+            ></canvas>
+          </div>
         </div>
 
         <Suspense fallback={<div>coming soon</div>}>
@@ -892,15 +894,15 @@ const ProjectCard = ({
 
 const TimelineItem = ({ heading, text, Icon }) => {
   return (
-    <div className="flex gap-x-3">
-      <div className="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-neutral-700">
+    <div className="flex gap-x-3 pointer-events-none">
+      <div className="relative z-10 last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-neutral-700">
         <div className="relative z-10 size-7 flex justify-center items-center">
           <div className="size-2 rounded-full bg-neutral-600"></div>
         </div>
       </div>
 
       {/* <!-- Right Content --> */}
-      <div className="grow pt-0.5 pb-8">
+      <div className="grow pt-0.5 pb-8 z-10">
         <h3 className="flex gap-x-1.5 font-semibold text-white">
           <Icon />
           {heading}
@@ -914,8 +916,8 @@ const TimelineItem = ({ heading, text, Icon }) => {
 
 const TimelineHeading = ({ heading }) => {
   return (
-    <div className="ps-2 my-2 first:mt-0">
-      <h3 className="text-xs font-medium uppercase text-neutral-300">
+    <div className="ps-2 my-2 first:mt-0 z-10 pointer-events-none">
+      <h3 className="text-xs font-medium uppercase text-neutral-300 z-10">
         {heading}
       </h3>
     </div>
