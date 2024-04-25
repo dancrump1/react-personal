@@ -13,6 +13,7 @@ import { cn } from "./utils/cn.ts";
 import { CardBody, CardContainer, CardItem } from "./components/3dCard.tsx";
 
 import "../js/app";
+import { WobbleCard } from "./components/WobbleCard.tsx";
 
 const siteURL = process.env.PRIMARY_SITE_URL;
 
@@ -510,7 +511,7 @@ function App() {
         Psttt.... notice anything missing? Hint: it's styling... styling is
         missing
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-3 h-5/6 justify-center px-4 gap-x-2 dark:bg-black/[0.96] antialiased bg-grid-white/[0.02]">
+      <div className="grid grid-cols-1 mb-6 md:grid-cols-3 h-5/6 justify-center px-4 gap-14 dark:bg-black/[0.96] antialiased bg-grid-white/[0.02]">
         <ProjectCard
           header={"Gelinas Siding LLC (Apr 10, 2024)"}
           description={`Given a deadline of 26 days, giving piece of mind to a business owner was my main priority`}
@@ -859,36 +860,54 @@ const ProjectCard = ({
   perspective = "1000px",
 }) => {
   return (
-    <CardContainer
-      className="inter-var w-full h-full"
-      containerClassName={cn(cardClass, "w-full")}
-      perspective={perspective}
-    >
-      <CardBody className="bg-gray-50 relative group/card h-full dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] rounded-xl p-6 border  ">
-        <CardItem translateZ={15}>
-          <h3 className="w-full text-xl font-bold text-neutral-600 dark:text-white">
-            {header}
-          </h3>
-        </CardItem>
-        <CardItem translateZ="100" className="w-full mt-4">
-          <img
-            src={img}
-            height="1000"
-            width="1000"
-            className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-            alt="thumbnail"
-          />
-        </CardItem>
-        <CardItem translateZ={70}>
-          <p className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300">
-            {description}
-          </p>
-        </CardItem>
-        <CardItem translateZ={15}>
-          <HoverCTA url={url} text={cta} />
-        </CardItem>
-      </CardBody>
-    </CardContainer>
+    <WobbleCard containerClassName={cardClass}>
+      <div className="w-1/2">
+        <h3 className="w-full text-xl font-bold text-neutral-600 dark:text-white">
+          {header}
+        </h3>
+        <p className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300">
+          {description}
+        </p>
+        <HoverCTA url={url} text={cta} />
+      </div>
+      <img
+        src={img}
+        height="1000"
+        width="1000"
+        className="h-60 w-full object-cover object-left-top group-hover/card:shadow-xl absolute -bottom-[0%] -right-[50%] -z-10"
+        alt="thumbnail"
+      />
+    </WobbleCard>
+    // <CardContainer
+    //   className="inter-var w-full h-full"
+    //   containerClassName={cn(cardClass, "w-full")}
+    //   perspective={perspective}
+    // >
+    //   <CardBody className="bg-gray-50 relative group/card h-full dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] rounded-xl p-6 border  ">
+    //     <CardItem translateZ={15}>
+    //       <h3 className="w-full text-xl font-bold text-neutral-600 dark:text-white">
+    //         {header}
+    //       </h3>
+    //     </CardItem>
+    //     <CardItem translateZ="100" className="w-full mt-4">
+    //       <img
+    //         src={img}
+    //         height="1000"
+    //         width="1000"
+    //         className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+    //         alt="thumbnail"
+    //       />
+    //     </CardItem>
+    //     <CardItem translateZ={70}>
+    //       <p className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300">
+    //         {description}
+    //       </p>
+    //     </CardItem>
+    //     <CardItem translateZ={15}>
+    //       <HoverCTA url={url} text={cta} />
+    //     </CardItem>
+    //   </CardBody>
+    // </CardContainer>
   );
 };
 
