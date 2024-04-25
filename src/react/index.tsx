@@ -916,7 +916,7 @@ const TimelineItem = ({ heading, text, Icon }) => {
 
 const TimelineHeading = ({ heading }) => {
   return (
-    <div className="ps-2 my-2 first:mt-0 z-10 pointer-events-none">
+    <div className="ps-2 my-2 first:mt-0 relative z-10 pointer-events-none">
       <h3 className="text-xs font-medium uppercase text-neutral-300 z-10">
         {heading}
       </h3>
