@@ -512,7 +512,7 @@ function App() {
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 h-5/6 justify-center px-4 gap-x-2 dark:bg-black/[0.96] antialiased bg-grid-white/[0.02]">
         <ProjectCard
-          header={"Gelinas Siding LLC"}
+          header={"Gelinas Siding LLC (Apr 10, 2024)"}
           description={`Given a deadline of 26 days, giving piece of mind to a business owner was my main priority`}
           url={"http://gelinas-siding.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
           cta={"gelinassidding.com"}
@@ -520,7 +520,7 @@ function App() {
           cardClass="col-span-1"
         />
         <ProjectCard
-          header={"Shop Country Stores"}
+          header={"Shop Country Stores (Jan 2024, WIX)"}
           description={
             "A good moral project that I thought would be an amazing starting point for my portfolio"
           }
@@ -531,7 +531,7 @@ function App() {
           perspective="2500px"
         />
         <ProjectCard
-          header={"Ned Ninja"}
+          header={"Ned Ninja (Apr 19, 2024"}
           description={"A buddy and his fish 🎣"}
           url={"http://app-feeney.k9rria1zz3-rz83yxpn04d7.p.temp-site.link/"}
           cta={"Ned Ninja"}
@@ -540,15 +540,15 @@ function App() {
           perspective="2500px"
         />
         <ProjectCard
-          header={"WIP OSG Paintball map"}
-          description={`A conversation turned into reality, hope to be able to refine this and actually get it onto OSG's website!`}
+          header={"WIP OSG Paintball map (March 2024)"}
+          description={`A conversation turned into WIP reality. Hopefully this proof of concept allots me access to their site! I'd love to improve it with this and many more updates.`}
           url={"https://test-hover-map.multiscreensite.com/"}
-          cta={"Would this be cool on their site?"}
+          cta={"Test of map feature"}
           img="/local/osg.png"
           cardClass="col-span-1"
         />
         <ProjectCard
-          header={"techdiff.io V1"}
+          header={"techdiff.io V1 (Nov 14, 2023)"}
           description={
             "I had started this project in Twig/PHP, but wanted to jump to client rendered code"
           }
@@ -558,7 +558,7 @@ function App() {
           cardClass="col-span-1"
         />
         <ProjectCard
-          header={"Room To Improve Interiors"}
+          header={"Room To Improve Interiors (Aug 26, 2023)"}
           description={
             "Working with my FMIL, we started making her dream jobs landing page."
           }
@@ -568,7 +568,7 @@ function App() {
           cardClass="col-span-1"
         />
         <ProjectCard
-          header={"A tool for a friend"}
+          header={"A tool for a friend (Jan 25, 2020"}
           description={"He uses Twitch far too much"}
           url={"http://twitch-clips.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
           cta={"What happend to Heroku?"}
@@ -576,7 +576,7 @@ function App() {
           cardClass="col-span-1"
         />
         <ProjectCard
-          header={"An old personal site"}
+          header={"An old personal site (Mar 21, 2019"}
           description={"Back in my coding bootcamp days..."}
           url={"http://dan.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
           cta={"An oldie but a goodie!"}
