@@ -496,7 +496,7 @@ function App() {
             />
           </h1>
           <p className="text-2xl text-neutral-500 text-center mx-auto dark:text-neutral-300">
-            Figuring out each facet of life one trial-and-error at a time!
+            Figuring out each facet of life one trial-and-error at a time
           </p>
         </div>
       </div>
