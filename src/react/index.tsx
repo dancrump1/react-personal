@@ -709,14 +709,16 @@ function App() {
         </span>
       </h2>
       <p className="text-center text-base md:text-lg font-normal mb-6 text-neutral-700 dark:text-neutral-200 mx-auto py-2">
-        Psttt.... notice anything missing? Hint: it's styling... styling is
-        missing
+        "I can't pick the paint color, or the decor for the walls, or which
+        style sink to install. But, I can paint with the color you choose, I can
+        hang anything you pick, and can build a whole bathroom to fit the sink
+        you choose."
       </p>
       <div className="grid overflow-hidden grid-cols-1 mb-6 md:grid-cols-3 h-5/6 justify-center pt-7 px-4 md:px-16 gap-14 dark:bg-black/[0.96] antialiased bg-grid-white/[0.02]">
         <ProjectCard
           header={"Gelinas Siding LLC (Apr 10, 2024)"}
           description={`Given a deadline of 26 days, giving piece of mind to a business owner was my main priority`}
-          url={"http://gelinas-siding.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
+          url={"https://gelinassiding.com"}
           cta={"gelinassidding.com"}
           img="/local/gelinas.png"
           cardClass="col-span-1"
@@ -733,13 +735,60 @@ function App() {
           perspective="2500px"
         />
         <ProjectCard
-          header={"Ned Ninja (Apr 19, 2024)"}
-          description={"A buddy and his fish 🎣"}
-          url={"http://app-feeney.k9rria1zz3-rz83yxpn04d7.p.temp-site.link/"}
-          cta={"Ned Ninja"}
-          img="/local/ned.png"
+          header={"Emma's Physical Therapy"}
+          description={"New beginnings deserve a good start"}
+          url={"http://emma.5ms7u3m2ew-xlm41vl554dy.p.temp-site.link/"}
+          cta={"PT for you and me"}
+          img="/local/Untitled.png"
           cardClass="md:col-span-2"
           perspective="2500px"
+        />
+        <ProjectCard
+          header={"Ned Ninja (Apr 19, 2024)"}
+          description={"A buddy and his fish 🎣"}
+          url={"http://ned-ninja.k9rria1zz3-rz83yxpn04d7.p.temp-site.link/"}
+          cta={"Ned Ninja"}
+          img="/local/ned.png"
+          cardClass="md:col-span-1"
+          perspective="2500px"
+        />
+
+        <ProjectCard
+          header={"techdiff.io V1 (Nov 14, 2023)"}
+          description={
+            "I had started this project in Twig/PHP, but wanted to jump to client rendered code"
+          }
+          url={"http://old-techdiff.k9rria1zz3-rz83yxpn04d7.p.temp-site.link/"}
+          cta={"old tech diff site"}
+          img="/local/old_techdiff.png"
+          cardClass="col-span-1"
+        />
+        <ProjectCard
+          header={"Room To Improve Interiors (Aug 26, 2023)"}
+          description={
+            "Working with my FMIL, we started making her dream jobs landing page."
+          }
+          url={"https://www.roomtoimproveinteriors.com"}
+          cta={"Room to Improve"}
+          img="/local/rtii.png"
+          cardClass="col-span-1"
+        />
+        <ProjectCard
+          header={"A tool for a friend (Jan 25, 2020)"}
+          description={"He uses Twitch far too much"}
+          url={"http://twitch-clips.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
+          cta={"What happend to Heroku?"}
+          img="/local/twitch.png"
+          cardClass="col-span-1"
+        />
+        <ProjectCard
+          header={"An old personal site (Mar 21, 2019)"}
+          description={"Back in my coding bootcamp days..."}
+          url={"http://dan.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
+          cta={"An oldie but a goodie!"}
+          img="/local/old.png"
+          cardClass="md:col-span-3"
+          perspective="5000px"
         />
         <>
           <div id="sherwood_forest-modal" className="modal">
@@ -935,43 +984,6 @@ function App() {
             </svg>
           </div>
         </>
-        <ProjectCard
-          header={"techdiff.io V1 (Nov 14, 2023)"}
-          description={
-            "I had started this project in Twig/PHP, but wanted to jump to client rendered code"
-          }
-          url={"http://old-techdiff.k9rria1zz3-rz83yxpn04d7.p.temp-site.link/"}
-          cta={"old tech diff site"}
-          img="/local/old_techdiff.png"
-          cardClass="col-span-1"
-        />
-        <ProjectCard
-          header={"Room To Improve Interiors (Aug 26, 2023)"}
-          description={
-            "Working with my FMIL, we started making her dream jobs landing page."
-          }
-          url={"https://www.roomtoimproveinteriors.com"}
-          cta={"Room to Improve"}
-          img="/local/rtii.png"
-          cardClass="col-span-1"
-        />
-        <ProjectCard
-          header={"A tool for a friend (Jan 25, 2020)"}
-          description={"He uses Twitch far too much"}
-          url={"http://twitch-clips.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
-          cta={"What happend to Heroku?"}
-          img="/local/twitch.png"
-          cardClass="col-span-1"
-        />
-        <ProjectCard
-          header={"An old personal site (Mar 21, 2019)"}
-          description={"Back in my coding bootcamp days..."}
-          url={"http://dan.k9rria1zz3-rz83yxpn04d7.p.temp-site.link"}
-          cta={"An oldie but a goodie!"}
-          img="/local/old.png"
-          cardClass="md:col-span-3"
-          perspective="5000px"
-        />
       </div>
 
       <div className="w-full dark:bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
